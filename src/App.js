@@ -34,7 +34,8 @@ function App() {
             <Blog/>
               
             </Route>
-            <Route path="/contacto">
+            
+            <Route path=" /contacto">
             <NavBar></NavBar>
             <Contacto/>
             </Route>
