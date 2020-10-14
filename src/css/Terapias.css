@@ -1,0 +1,26 @@
+.terapias{
+    
+}
+.terapias__banner{
+    width: 100vw;
+    position: absolute;
+    bottom: 260px;
+    z-index: -1;
+}
+.terapias__cards{
+    margin-top: 160px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+
+
+    background-image: url("https://i.ibb.co/J7CmxDd/Grupo-30.png") ;
+    /* Set a specific height */
+
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
