@@ -76,12 +76,10 @@ const NavLink= styled(Link)`
 function NavBar() {
     return (
         <StyledNavBar>
-
-            <LinkLogo to="/bienvenidos">   
+            <LinkLogo to="/bienvenidos">
                 <NavLogo />
                 <h1>Conexión y Consciencia</h1>
             </LinkLogo>
-
             <NavLinks>
                 <NavLink to="/"  >
                     <h1>Bienvenidos</h1>
