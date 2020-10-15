@@ -1,19 +1,31 @@
-import React from 'react'
+import React,{useState} from 'react'
 import '../css/TerapiasCard.css';
 
-function TerapiasCard() {
+function TerapiasCard({title,textLess,textMore,imgurl,id}) {
+    const [btnText, setBtnText] = useState('Ver Más');
+    const [text, setTexts] = useState(textLess);
+    const nameId="terapiacard"
+    const idTer= nameId.concat(id);
+    const handleClick = () =>{
+        if(btnText==='Ver Más'){
+            document.getElementById(idTer).style.height = "800px"
+            setTexts(textMore)
+            setBtnText('Ver Menos')
+        }else{
+            document.getElementById(idTer).style.height = "500px"
+            setTexts(textLess)
+            setBtnText('Ver Más')
+        }
+       
+    }
     return (
-        <div className="terapiascard">
-            <h1>Terapia con Angeles</h1>
-            <img src="https://i.ibb.co/xFm1QsD/Whats-App-Image-2020-09-24-at-2-52-33-PM.png" 
-            alt="Whats-App-Image-2020-09-24-at-2-52-33-PM" 
+        <div className="terapiascard" id={idTer}>
+            <h1>{title}</h1>
+            <img src={imgurl} 
+            alt="timage" 
             border="0"></img>
-            <p>La terapia con ángeles es una herramienta de sanación, 
-                donde a través del contacto y los mensajes de ángeles 
-                y arcángeles podrás comprender el propósito de todas las
-                experiencias de vida que atraviesas y has atravesado a lo 
-                largo de tu existencia...</p>
-            <button>Ver mas</button>
+            <p id="idtext">{text}</p>
+            <button onClick={handleClick}>{btnText}</button>
         </div>
     )
 }
