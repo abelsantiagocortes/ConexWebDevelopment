@@ -8,12 +8,11 @@
     height: 500px;
     justify-content: space-around;
     margin-right: 20px;
-    transition: transform 2s;
-    transition: height 1s;
+    transition: 2s;
 
 }
 .terapiascard:hover {
-transform: scale(1.02);
+    transform: scale(1.02);
 }
 .terapiascard > h1{
     margin-left: 0 !important;
