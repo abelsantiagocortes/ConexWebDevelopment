@@ -57,11 +57,9 @@ function NavBar() {
         <StyledNavBar>
 
             <LinkLogo to="/bienvenidos">
-            
                 <NavLogo />
                 <h1>Conexión y Consciencia</h1>
             </LinkLogo>
-
             <NavLinks>
                 <Link to="/"  >
                     <h1>Bienvenidos</h1>

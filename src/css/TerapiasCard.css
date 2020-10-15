@@ -10,13 +10,13 @@
     margin-left: 0 !important;
 }
 .terapiascard > img{
-    margin-top: 40px;
     width: 200px;
 }
 .terapiascard > p{
     text-align: center;   
     margin-left: 30px;
     margin-right: 30px; 
+    color: white;
 }
 .terapiascard > button{
     background-color: white;
