@@ -1,0 +1,73 @@
+.blog__bannerContainer{
+    background-image: url("https://i.ibb.co/zPzBXCh/Grupo-de-desplazamiento-3.png") ;
+    /* Set a specific height */
+    height: 45vh;
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.blog__bannerContainer > h1{
+    padding-top: 30px;
+    margin-top: 0px;
+    color: white;
+    margin-left: 60px;
+}
+.blog__ContentWelcome{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    background-color: #E6D7F3;
+    width: 60vw;
+    align-items: center;
+    padding: 30px;
+    border-radius: 30px;
+}
+.blog__ContentWelcome > h1{
+    color:  #7B2CBF;
+    text-align: center;
+}
+.blog__ContentWelcome > p{
+    color: #707070;
+}
+.blog__Content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.blog__ContentBtns{
+    margin-top: 40px;
+    width: 60vw;
+    display: flex;
+    justify-content: space-evenly;
+}
+.blog__ContentBtns> button{
+    width: 30%;
+    background-color: #7B2CBF;
+    color: white;
+    padding: 20px;
+    border-radius: 10px !important;
+    border: 0px;
+    font-size: medium;
+}
+.blog__ContentBtnsMore{
+    background-color: white !important;
+    color: #7B2CBF !important;
+    border: 2px solid #7B2CBF !important;
+}
+@media only screen and (max-width: 780px) {
+    .blog__ContentBtns {
+        margin-top: 40px;
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .blog__ContentBtnsMore{
+        margin-bottom: 20px;
+    }
+    .blog__ContentBtns> button{
+        width: 150px;
+    }
+}
