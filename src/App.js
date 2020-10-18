@@ -15,37 +15,37 @@ function App() {
         <div className="app">
           <Switch>
             <Route path="/bienvenidos">
-            <NavBar></NavBar>
-            <Bienvenidos/>
-              
+              <NavBar></NavBar>
+              <Bienvenidos />
+
             </Route>
             <Route path="/sobremi">
-            <NavBar></NavBar>
-            <SobreMi/>
-              
+              <NavBar></NavBar>
+              <SobreMi />
+
             </Route>
             <Route path="/terapias">
-            <NavBar></NavBar>
-            <Terapias/>
-              
+              <NavBar></NavBar>
+              <Terapias />
+
             </Route>
             <Route path="/blog">
-            <NavBar></NavBar>
-            <Blog/>
-              
+              <NavBar></NavBar>
+              <Blog />
+
             </Route>
-            
-            <Route path=" /contacto">
-            <NavBar></NavBar>
-            <Contacto/>
+
+            <Route path="/contacto">
+              <NavBar></NavBar>
+              <Contacto />
             </Route>
 
             <Route path="/">
-            <NavBar></NavBar>
-            <Bienvenidos/>
-              
+              <NavBar></NavBar>
+              <Bienvenidos />
+
             </Route>
-            
+
           </Switch>
         </div>
       </Router>
