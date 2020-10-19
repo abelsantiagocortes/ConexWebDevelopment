@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components/macro';
+import Social from './Social';
 const SobreMiContainer = styled.div`
     {
         display: flex;
@@ -272,6 +273,7 @@ const SecondParagraph = styled.h1`{
 function SobreMi() {
     return (
         <SobreMiContainer>
+            <Social/>
             <IntroContainer>
 
                 <NameContainer>

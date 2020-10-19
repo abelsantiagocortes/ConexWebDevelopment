@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components/macro';
 import '../css/Terapias.css';
 import TerapiasCard from '../components/TerapiasCard'
+import Social from './Social';
 const TerapiasContainer = styled.div`
     {
         
@@ -16,6 +17,7 @@ const TerapiasContainer = styled.div`
 function Terapias() {
     return (
         <TerapiasContainer className="terapias">
+            <Social/>
             <div className="terapias__bannerContainer">
                 <h1>Mis Terapias</h1>
             </div>

@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components/macro';
 import '../css/Blog.css';
 import BlogCard from './BlogCard';
+import Social from './Social';
 
 const BlogContainer = styled.div`
     {
@@ -15,6 +16,9 @@ const BlogContainer = styled.div`
 function Blog() {
     return (
         <BlogContainer className="blog">
+            
+            <Social/>
+            
             <div className="blog__bannerContainer">
                 <h1>Blog</h1>
             </div>

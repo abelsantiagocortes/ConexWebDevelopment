@@ -5,7 +5,7 @@
 .terapias__bannerContainer{
     background-image: url("https://i.ibb.co/QJrr0YD/Grupo-de-desplazamiento-1.png") ;
     /* Set a specific height */
-    height: 45vh;
+    height: 25vh;
     /* Position and center the image to scale nicely on all screens */
     background-position: center;
     background-repeat: no-repeat;

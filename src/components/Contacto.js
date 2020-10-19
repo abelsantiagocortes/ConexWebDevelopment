@@ -1,6 +1,7 @@
 import React,{useState} from 'react'
 import styled from 'styled-components/macro';
 import '../css/Contacto.css';
+import Social from './Social';
 
 const ContactoContainer = styled.div`
     {
@@ -24,6 +25,7 @@ function Contacto() {
 
     return (
         <ContactoContainer className="contacto">
+            <Social/>
             <div className="contacto__bannerContainer">
                 <h1>Contacto</h1>
             </div>

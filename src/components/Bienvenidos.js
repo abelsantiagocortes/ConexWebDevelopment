@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components/macro';
+import Social from './Social';
 
 const BienvenidosContainer = styled.div`
     {
@@ -15,6 +16,8 @@ function Bienvenidos() {
     return (
         <BienvenidosContainer>
             <h1>Bienvenidos</h1>
+            <Social/>
+
         </BienvenidosContainer>
     )
 }

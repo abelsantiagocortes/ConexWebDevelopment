@@ -1,0 +1,32 @@
+
+.social {
+    position: fixed;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    right: 0%;
+    z-index: 999;
+    background-color: #ECD6FF;
+    border-bottom-left-radius: 30px;
+    border-top-left-radius: 30px;
+    border: 1px solid #7B2CBF;
+    box-shadow: 5px 5px #707070;
+}
+  
+.social a {
+    display: block;
+    text-align: center;
+    padding: 10px;
+    transition: all 0.3s ease;
+}
+  .social img {
+    width: 40px;
+    border-radius: 20px ;
+
+  }
+  .social a:hover {
+    transform: scale(1.1);
+
+  }
+ 
