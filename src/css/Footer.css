@@ -1,0 +1,47 @@
+.footer {
+    margin-top: 40px;
+    display: flex;
+    width: 100%;
+    background-color: #7B2CBF;
+    color: white;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer__socialLinks img{
+    width: 40px ;
+    margin: 10px;
+}
+.footer__logoLang > h3{
+    color: white;
+    font-family: 'Lobster Two', cursive; 
+}   
+.footer h5{
+    margin: 5px; 
+ }  
+ .footer__languajepicker img{
+    margin-left: 5px;
+    width: 25px;
+ }
+ .footer__languajepicker > div{
+     display: flex;
+     align-items: center;
+     cursor: pointer;
+
+ }
+ .footer__logoLang{
+     display: flex;
+     align-items: center;
+ }
+ .footer__languajepicker{
+     margin-left: 20px;
+ }
+ 
+@media only screen and (max-width: 600px) {
+    .footer__languajepicker{
+        margin-left: 0px;
+    }
+    .footer__logoLang > h3{
+        display: none; 
+    }  
+}

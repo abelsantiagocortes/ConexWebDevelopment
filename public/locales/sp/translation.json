@@ -1,0 +1,36 @@
+{
+    "ContactQuestion":{
+        "1":"¿Alguna pregunta?"
+    },
+    "Contact":{
+        "1":"Contacto"
+    },
+    "Name":{
+        "1":"Nombre completo"
+    }
+    ,
+    "Email":{
+        "1":"¿Cuál es tu correo?"
+    },
+    "Yourquestions":{
+        "1":"Tus preguntas..."
+    }
+    ,
+    "Sendbtn":{
+        "1":"Enviar"
+    }
+    ,
+    "When":{
+        "1":"Responderé a tu solicitud prontamente"
+    },
+    "Welcomeblog":{
+        "1":"Bienvenido al blog"
+    },
+    "Subscribe":{
+        "1":"Suscribirme"
+    }
+    ,
+    "MoreArt":{
+        "1":"Más Articulos"
+    }
+}
