@@ -7,50 +7,58 @@ import SobreMi from './components/SobreMi';
 import Terapias from './components/Terapias';
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Footer from './components/Footer';
 
 function App() {
   return (
-    <div className="App">
-      <Router>
-        <div className="app">
-          <Switch>
-            <Route path="/bienvenidos">
-              <NavBar></NavBar>
-              <Bienvenidos />
+      <div className="App">
+        <Router>
+          <div className="app">
+            <Switch>
+              <Route path="/bienvenidos">
+                <NavBar></NavBar>
+                <Bienvenidos />
+                <Footer/>
 
-            </Route>
-            <Route path="/sobremi">
-              <NavBar></NavBar>
-              <SobreMi />
+              </Route>
+              <Route path="/sobremi">
+                <NavBar></NavBar>
+                <SobreMi />
+                <Footer/>
 
-            </Route>
-            <Route path="/terapias">
-              <NavBar></NavBar>
-              <Terapias />
+              </Route>
+              <Route path="/terapias">
+                <NavBar></NavBar>
+                <Terapias />
+                <Footer/>
 
-            </Route>
-            <Route path="/blog">
-              <NavBar></NavBar>
-              <Blog />
+              </Route>
+              <Route path="/blog">
+                <NavBar></NavBar>
+                <Blog />
+                <Footer/>
 
-            </Route>
+              </Route>
 
-            <Route path="/contacto">
-              <NavBar></NavBar>
-              <Contacto />
-            </Route>
+              <Route path="/contacto">
+                <NavBar></NavBar>
+                <Contacto />
+                <Footer/>
+              </Route>
 
-            <Route path="/">
-              <NavBar></NavBar>
-              <Bienvenidos />
+              <Route path="/">
+                <NavBar></NavBar>
+                <Bienvenidos />
+                <Footer/>
 
-            </Route>
+              </Route>
 
-          </Switch>
-        </div>
-      </Router>
+            </Switch>
+          </div>
+        </Router>
 
-    </div>
+      </div>
+
   );
 }
 
