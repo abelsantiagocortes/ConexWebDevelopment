@@ -21,5 +21,15 @@
     ,
     "When":{
         "1":"I will respond to your request as soon as possible"
+    },
+    "Welcomeblog":{
+        "1":"Welcome to the blog"
+    },
+    "Subscribe":{
+        "1":"Subscribe"
+    }
+    ,
+    "MoreArt":{
+        "1":"More articles"
     }
 }

@@ -11,7 +11,7 @@ const NavLogo = styled.img`
     
 }`
 function Footer() {
-    const { t, i18n } = useTranslation();
+    const { i18n } = useTranslation();
     function changeLanguage(lang) {
         i18n.changeLanguage(lang);
         console.log(lang)
@@ -24,20 +24,20 @@ function Footer() {
                 <div className="footer__languajepicker">
                     <div onClick={() => changeLanguage('en')} className="footer__languajepickerEn">
                         <h5  >English</h5>
-                        <img src='https://i.ibb.co/p4BLGMp/english-language.png' />
+                        <img alt="" src='https://i.ibb.co/p4BLGMp/english-language.png' />
                     </div>
                     <div onClick={() => changeLanguage('es')} className="footer__languajepickerEn">
                         <h5>Español</h5>
-                        <img src='https://i.ibb.co/8Dc1WGP/spanish-language.png' />
+                        <img alt="" src='https://i.ibb.co/8Dc1WGP/spanish-language.png' />
                     </div>
 
                 </div>
             </div>
 
             <div className="footer__socialLinks">
-                <a href="https://www.facebook.com" className="facebook"><img src='https://i.ibb.co/MNMxD7M/facebook.png' /></a>
-                <a href="https://www.instagram.com" className="youtube"><img src='https://i.ibb.co/dWTdwMS/Grupo-25.png' /></a>
-                <a href="https://www.youtube.com" className="instagram"><img src='https://i.ibb.co/1MrLW7G/Grupo-16.png' /></a>
+                <a href="https://www.facebook.com" className="facebook"><img alt="" src='https://i.ibb.co/MNMxD7M/facebook.png' /></a>
+                <a href="https://www.instagram.com" className="youtube"><img alt="" src='https://i.ibb.co/dWTdwMS/Grupo-25.png' /></a>
+                <a href="https://www.youtube.com" className="instagram"><img alt="" src='https://i.ibb.co/1MrLW7G/Grupo-16.png' /></a>
             </div>
 
 

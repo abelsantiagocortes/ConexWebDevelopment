@@ -3,6 +3,7 @@ import styled from 'styled-components/macro';
 import '../css/Blog.css';
 import BlogCard from './BlogCard';
 import Social from './Social';
+import { useTranslation } from 'react-i18next';
 
 const BlogContainer = styled.div`
     {
@@ -14,6 +15,8 @@ const BlogContainer = styled.div`
     }`
 
 function Blog() {
+    const { t } = useTranslation();
+
     return (
         <BlogContainer className="blog">
             
@@ -24,7 +27,7 @@ function Blog() {
             </div>
             <div className="blog__Content">
                 <div className="blog__ContentWelcome">
-                    <h1>Bienvenido al blog</h1>
+                    <h1>{t('Welcomeblog.1')}</h1>
                     <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                     Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
@@ -34,8 +37,8 @@ function Blog() {
                      deserunt mollit anim id est laborum." (Texto motivación a suscribirse)</p>
                 </div>
                 <div className="blog__ContentBtns">
-                    <button className="blog__ContentBtnsMore" >Más artículos</button>
-                    <button>Suscribirse</button>
+                    <button className="blog__ContentBtnsMore" >{t('MoreArt.1')}</button>
+                    <button>{t('Subscribe.1')}</button>
                 </div>
                 <BlogCard/>
                 <h1>Entradas pasadas...</h1>

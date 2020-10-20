@@ -1,15 +1,16 @@
 
 .social {
     position: fixed;
-    top: 50%;
+    top: 60%;
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
-    right: 0%;
+    left: 0%;
+    
     z-index: 999;
     background-color: #ECD6FF;
-    border-bottom-left-radius: 30px;
-    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-top-right-radius: 30px;
     border: 1px solid #7B2CBF;
     box-shadow: 5px 5px #707070;
 }

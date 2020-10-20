@@ -22,5 +22,15 @@
     ,
     "When":{
         "1":"Responderé a tu solicitud prontamente"
+    },
+    "Welcomeblog":{
+        "1":"Bienvenido al blog"
+    },
+    "Subscribe":{
+        "1":"Suscribirme"
+    }
+    ,
+    "MoreArt":{
+        "1":"Más Articulos"
     }
 }
