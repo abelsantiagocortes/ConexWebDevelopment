@@ -118,7 +118,7 @@ const BienvenidosBotones = styled.div`
     @media (max-width: 550px) {
              flex-direction:column;
              justify-content:space-between;  
-             height:80px; 
+             height:100px; 
          }
 
 }`
