@@ -16,7 +16,7 @@ const StyledNavBar = styled.nav`
         height: 80px;
         width: 100%;
         font-family: 'Lobster Two', regular;
-        font-size: 20px;
+        font-size: 1vw;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
     }`
@@ -27,15 +27,20 @@ const NavLinks = styled.nav`
     justify-content: space-evenly;
     margin-right: 10px;
     align-items: center;
-    text-decoration: none;
+    text-decoration: none !important;;
+    font-size: 1vw;
     font-family: 'Lobster', cursive;
     color:#707070;
-    h1 { font-family: 'Lobster Two', cursive; }
+    h1 { 
+        font-size: 1.5vw;
+        text-decoration: none !important;;
+        font-family: 'Lobster Two', cursive; }
     Link{
-        text-decoration: none;
+        text-decoration: none !important;;
+        
     }
 
-    @media only screen and (max-width: 1000px) {
+    @media only screen and (max-width: 800px) {
  {
         display: none;
 
@@ -60,15 +65,31 @@ const LinkLogo= styled(Link)`
     display: flex;
     margin-right: 20px;
     align-items: center;
-    text-decoration: none;
+    text-decoration: none !important;;
     color: #7B2CBF;
+    width:60%;
+    h1 { 
+        font-size: 2vw;
+        text-decoration: none !important;;
+        font-family: 'Lobster Two', cursive; }
+    @media only screen and (max-width: 800px) {
+    {
+        h1 { 
+        font-size: 4vw; }
+    
+        width:80%;
+    }
+    }
 }`
 
 const NavLink= styled(Link)`
 {
-    text-decoration: none;
+    text-decoration: none !important;;
     color:#707070;
     &.active {
+    color: #7B2CBF;
+  }
+  &.hover {
     color: #7B2CBF;
   }
 }`
@@ -82,7 +103,7 @@ function NavBar() {
             </LinkLogo>
             <NavLinks>
                 <NavLink to="/"  >
-                    <h1>Bienvenidos</h1>
+                   <h1>Bienvenidos</h1> 
                 </NavLink>
                 <NavLink to="/sobremi"  >
                     <h1>Sobre Mí</h1>

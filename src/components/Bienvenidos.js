@@ -93,6 +93,8 @@ const BienvenidosInfo1 = styled.h1`
     font-size:1.5vw;
     margin-left: 10%;
     margin-right:10%;
+    margin-top: 2%;
+    margin-bottom:2%;
     font-family: 'Sorts Mill Goudy';
     font-weight: 100 !important;
     @media (max-width: 550px) {

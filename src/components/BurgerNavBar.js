@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 const BurgerNavBar = styled.div`
   display : none;
-  @media (max-width: 1000px) {
+  @media (max-width: 800px) {
     font-family: 'Lobster Two';
     text-decoration: none;
     display:block;
@@ -27,7 +27,7 @@ const BurgerNavBar = styled.div`
       
       padding: 20px 5px;
       font-family: 'Lobster Two';
-      font-size: 1em;
+      font-size: 5vw;
       color: #707070; 
       text-align: center;
       margin-right:5px;
