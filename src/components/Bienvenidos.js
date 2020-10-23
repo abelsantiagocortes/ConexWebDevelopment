@@ -1,6 +1,9 @@
 import React from 'react'
 import styled from 'styled-components/macro';
 import Social from './Social';
+import ExperienceCard from './ExperienceCard'
+
+
 
 const BienvenidosContainer = styled.div`
     {
@@ -74,14 +77,20 @@ const BienvenidosInfoContainer = styled.div`
 const BienvenidosTitulo = styled.h1`
 {
     font-family: 'Lobster Two';
-    color:#7B2CBF
+    color:#7B2CBF;
+    margin-top:2%;
+    font-size:3vw;
+    @media (max-width: 550px) {
+                font-size:6vw;
+                
+         }
  
 
 }`
 const BienvenidosInfo1 = styled.h1`
 {
     text-align: center;
-    font-size:2vw;
+    font-size:1.5vw;
     margin-left: 10%;
     margin-right:10%;
     font-family: 'Sorts Mill Goudy';
@@ -107,6 +116,25 @@ const BienvenidosInfo2 = styled.h1`
          }
 
 }`
+const BienvenidosInfo3 = styled.h1`
+{
+    font-size:2vw;
+
+    font-family: 'Sorts Mill Goudy';
+    text-align: Left;
+    margin-top:5%;
+    margin-left: 15%;
+    margin-right: auto;
+    font-weight: bold;
+    
+    @media (max-width: 550px) {
+                font-size:4vw;
+                margin-top:10%;
+                
+         }
+
+}`
+
 
 const BienvenidosBotones = styled.div`
 {
@@ -114,11 +142,12 @@ const BienvenidosBotones = styled.div`
     flex-direction:row;
     width:40%;
     justify-content:space-evenly;
+    margin-top:2%;
     
     @media (max-width: 550px) {
              flex-direction:column;
              justify-content:space-between;  
-             height:100px; 
+             height:60px; 
          }
 
 }`
@@ -128,10 +157,9 @@ const BotonSobreMi = styled.button`
     width: 40%;
     background-color: #7B2CBF;
     color: white;
-    padding: 10px;
     border-radius: 10px !important;
     border: 0px;
-    font-size: 2vw;
+    font-size: 1.5vw;
     font-family: 'Sorts Mill Goudy';
     @media (max-width: 550px) {
             font-size: 4vw;
@@ -145,10 +173,9 @@ const BotonTerapias = styled.button`
     width: 40%;
     background-color: #7B2CBF;
     color: white;
-    padding: 10px;
     border-radius: 10px !important;
     border: 0px;
-    font-size: 2vw;
+    font-size: 1.5vw;
     font-family: 'Sorts Mill Goudy';
 
     @media (max-width: 550px) {
@@ -167,8 +194,13 @@ const VideoContainer = styled.div`
     margin-left: auto;
     margin-right: auto;
     width:50%;
-    margin-top:5%;
+    margin-top:3%;
 
+    @media (max-width: 550px) {
+             
+        width:70%;
+         }
+    
 
     
 }`
@@ -218,12 +250,16 @@ function Bienvenidos() {
                 </BienvenidosBotones>
             </BienvenidosInfoContainer>
 
+            <BienvenidosInfo3>Sobre Conexión y Consciencia...</BienvenidosInfo3>
             <VideoContainer>
                 <VideoFrame>
                     <Video src="https://www.youtube.com/embed/cI4ryatVkKw" frameborder="0" allowfullscreen="" ></Video>
                 </VideoFrame>
             </VideoContainer>
+            <BienvenidosInfo3>Algunas Experiencias:</BienvenidosInfo3>
+            <ExperienceCard>
 
+            </ExperienceCard>
 
             <Social />
 
