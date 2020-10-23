@@ -19,7 +19,7 @@ const IntroContainer = styled.div`
     
     justify-content: space-evenly;
     vertical-align:middle;
-    @media (max-width: 1220px) {
+    @media (max-width: 550px) {
         justify-content: flex-start;
         flex-direction: column;
         align-items:center;
@@ -35,7 +35,12 @@ const IntroContainer = styled.div`
             font-weight: 100 !important;
             vertical-align:middle;
             @media (max-width: 1220px) {
-                font-size:8vw;
+                font-size:4vw;
+                padding-top: 0;
+               
+         }
+         @media (max-width: 550px) {
+                font-size:6vw;
                 padding-top: 0;
                
          }
@@ -52,8 +57,13 @@ const IntroContainer = styled.div`
             vertical-align:middle;
             @media (max-width: 1220px) {
                 
-                font-size:16vw;
+                font-size:8vw;
             }
+            @media (max-width: 550px) {
+                font-size:12vw;
+                padding-top: 0;
+               
+         }
         }
     
 
@@ -70,8 +80,16 @@ const ProfileImg = styled.img`
         margin-right:1em;
         vertical-align:middle;
         @media (max-width: 1220px) {
-        width:40vw;
-        height: 40vw;
+        width:30vw;
+        height: 30vw;
+        margin-left:0;
+        margin-right:0;
+
+        
+    }
+    @media (max-width: 550px) {
+        width:50vw;
+        height: 50vw;
         margin-left:0;
         margin-right:0;
 
@@ -92,6 +110,7 @@ const NameContainer = styled.div`
         width:60%;
         
     }
+    
   
     
 
@@ -99,13 +118,14 @@ const NameContainer = styled.div`
 const QuoteContainer = styled.div`
 {
     display: flex;  
-    width: 500px;
+    width: 40%;
     height:auto;
     position: relative;
-    margin-right:1em;
-    margin-top:10em;
-    @media (max-width: 1220px) {
-        display:none;
+    top:50%;
+    margin-right:40px;
+    
+    @media (max-width: 550px) {
+        display:none
         
     }
 
@@ -115,17 +135,24 @@ const QuoteImg = styled.img`
 {
 
         position: absolute;
-        width: 120px;
-        height: 120px;
+        width: 30%;
+        height: 30%;
         z-index: 2;
-        top:-80px;
-        left:400px;
+        top:20%;
+        left:80%;
+        @media (max-width: 1220px) {
+            width: 20%;
+        height: 20%;
+        top:26%;
+        
+    }
+        
 
 }`
 const BoxBack = styled.div`
 {
-    width: 500px;
-    height: 200px;
+    width: 100%;
+    height: 75%;
     position: absolute;
     border: 1px;
     border-style: solid;
@@ -136,19 +163,34 @@ const BoxBack = styled.div`
 }`
 const BoxTop = styled.div`
 {
-    z-index: 1;
-    width: 500px;
-    background-color:#6E00FF;  
-    height: 200px;
+
+    width: 100%;
+    height: fit-content;
+    background-color:#c599ff;  
     position: absolute;
-    opacity: 0.4;
-    top:5%;
-    left:20px;
+    vertical-align:middle;
+    font-size:2vw;
+    top:40%;
+    z-index: 2;
     align-items: center;
+    padding:4%;
+    h3{
+        font-family: 'Sorts Mill Goudy';
+        font-color:black;
+        font-size:2vw;
+    }
+    @media (max-width: 1220px) {
+       
+        h3{
+       
+        font-size:3vw;
+    }
+       
+   }
 }`
 
 const QuoteBox = styled.div`{
-    width: 500px;
+    width: 90%;
     vertical-align:middle;
     font-family: 'Sorts Mill Goudy';
     font-color:black;
@@ -156,14 +198,19 @@ const QuoteBox = styled.div`{
     top:15%;
     left:35px;
     position: absolute;
-    font-size: 2em;
+    font-size: 2vw;
+    @media (max-width: 1220px) {
+       
+        font-size: 3vw;
+        
+    }
 }`
 
 const FirstParagraph = styled.h1`{
     
     font-family: 'Sorts Mill Goudy';
     font-color:black;
-    font-size: 30px;
+    font-size: 2vw;
     margin-left:15%;
     margin-top:3em;
     margin-right:15%;
@@ -200,14 +247,14 @@ const AboutMeCont = styled.div`{
 
 const AboutMeInfo = styled.div`{
 
-    width: 45%;
+    width: 65%;
     background-color:#c599ff;  
     height: auto;
     vertical-align:middle;
     font-family: 'Sorts Mill Goudy';
     font-color:black;
     align-items: center;
-    font-size:2em;
+    font-size:2vw;
     padding:1em;
     @media (max-width: 1220px) {
         width:70%;
@@ -258,14 +305,15 @@ const AboutMeImg2 = styled.img`{
 const SecondParagraph = styled.h1`{
     
     font-family: 'Sorts Mill Goudy';
+    text-align:center;
     font-color:black;
-    font-size: 30px;
+    font-size: 2vw;
     margin-left:12%;
     margin-top:1em;
     margin-right:10%;
     font-weight: 100 !important;
     @media (max-width: 1220px) {
-        margin-top:0;
+        
         font-size: 1.5em;
     }
     
@@ -284,9 +332,10 @@ function SobreMi() {
                     
                 </NameContainer>
                 <QuoteContainer>
-                    <BoxBack></BoxBack>
-                    <BoxTop></BoxTop>
-                    <QuoteBox>…ayudar a otros a encontrarse con su ser y sanar su vida a través del contacto con ángeles y arcángeles.</QuoteBox>
+                    
+                    <BoxTop>
+                    <h3>…ayudar a otros a encontrarse con su ser y sanar su vida a través del contacto con ángeles y arcángeles.</h3></BoxTop>
+                    
                     <QuoteImg src="https://www.flaticon.com/svg/static/icons/svg/59/59149.svg"></QuoteImg>
                 </QuoteContainer>
                 
@@ -295,14 +344,11 @@ function SobreMi() {
             <AboutMeContainer>
                 <AboutMeCont>
                     <AboutMeInfo>Atendiendo sus mensajes, siguiendo su senda de amor incondicional y sobre todo aceptando su guía para sanarme, mi misión de vida me fue revelada: Ayudar a otros a encontrarse con su ser y sanar su vida a través del contacto con ángeles y arcángeles. </AboutMeInfo>
-                    <AboutMeImg src="https://images.unsplash.com/photo-1461468611824-46457c0e11fd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"></AboutMeImg>
                 </AboutMeCont>
                 <AboutMeCont>
-                    <AboutMeImg2 src="https://ambitonatural.com/wp-content/uploads/2020/06/Relationship-Challenges-%E2%80%93-Call-upon-Archangel-Chamuel-600x330.png"></AboutMeImg2>
                     <AboutMeInfo>Abrí mi consulta en el año 2005 y desde ese momento mi labor con estos maravillosos maestros no se ha detenido. Han sido mis guías, mis compañeros y mis maestros en este proceso de transformación personal.
                     
                     </AboutMeInfo>
-                    <AboutMeImg3 src="https://ambitonatural.com/wp-content/uploads/2020/06/Relationship-Challenges-%E2%80%93-Call-upon-Archangel-Chamuel-600x330.png"></AboutMeImg3>
 
                 </AboutMeCont>
             </AboutMeContainer>
