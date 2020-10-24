@@ -148,21 +148,21 @@ const BienvenidosBotones = styled.div`
     
     @media (max-width: 550px) {
              flex-direction:column;
-             justify-content:space-between;  
-             height:60px; 
+             justify-content:space-evenly;  
+             height:200px; 
          }
 
 }`
 
 const BotonSobreMi = styled.button`
 {
-    width: 40%;
+    width: 30%;
     background-color: #7B2CBF;
     color: white;
+    padding: 20px;
     border-radius: 10px !important;
     border: 0px;
-    font-size: 1.5vw;
-    font-family: 'Sorts Mill Goudy';
+    font-size: medium;
     @media (max-width: 550px) {
             font-size: 4vw;
             width: 100%;
@@ -172,13 +172,13 @@ const BotonSobreMi = styled.button`
 
 const BotonTerapias = styled.button`
 {
-    width: 40%;
+    width: 30%;
     background-color: #7B2CBF;
     color: white;
+    padding: 20px;
     border-radius: 10px !important;
     border: 0px;
-    font-size: 1.5vw;
-    font-family: 'Sorts Mill Goudy';
+    font-size: medium;
 
     @media (max-width: 550px) {
              
