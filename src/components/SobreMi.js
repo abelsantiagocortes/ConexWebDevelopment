@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components/macro';
 import Social from './Social';
+import { useTranslation } from 'react-i18next';
 const SobreMiContainer = styled.div`
     {
         display: flex;
@@ -320,6 +321,7 @@ const SecondParagraph = styled.h1`{
 }`
 
 function SobreMi() {
+    const { t } = useTranslation();
     return (
         <SobreMiContainer>
             <Social/>
@@ -327,32 +329,32 @@ function SobreMi() {
 
                 <NameContainer>
                     <ProfileImg src="https://i.ibb.co/mh7h16k/Whats-App-Image-2020-10-16-at-12-50-47-PM.jpg" />
-                    <div><h1>Mi nombre es </h1>
+                    <div><h1>{t('Sobre_MyName.1')} </h1>
                         <h2>Yelitza</h2></div>
                     
                 </NameContainer>
                 <QuoteContainer>
                     
                     <BoxTop>
-                    <h3>…ayudar a otros a encontrarse con su ser y sanar su vida a través del contacto con ángeles y arcángeles.</h3></BoxTop>
+                    <h3>{t('Sobre_Quote.1')}</h3></BoxTop>
                     
                     <QuoteImg src="https://www.flaticon.com/svg/static/icons/svg/59/59149.svg"></QuoteImg>
                 </QuoteContainer>
                 
             </IntroContainer>
-            <FirstParagraph>Siempre tuve inquietud por saber que había más allá del hombre y el mundo que conocemos y estaba en búsqueda constante de aquello que me hacía comprender y conocer más sobre la existencia humana. </FirstParagraph>
+            <FirstParagraph>{t('Sobre_FirstP.1')} </FirstParagraph>
             <AboutMeContainer>
                 <AboutMeCont>
-                    <AboutMeInfo>Atendiendo sus mensajes, siguiendo su senda de amor incondicional y sobre todo aceptando su guía para sanarme, mi misión de vida me fue revelada: Ayudar a otros a encontrarse con su ser y sanar su vida a través del contacto con ángeles y arcángeles. </AboutMeInfo>
+                    <AboutMeInfo>{t('Sobre_About1.1')} </AboutMeInfo>
                 </AboutMeCont>
                 <AboutMeCont>
-                    <AboutMeInfo>Abrí mi consulta en el año 2005 y desde ese momento mi labor con estos maravillosos maestros no se ha detenido. Han sido mis guías, mis compañeros y mis maestros en este proceso de transformación personal.
-                    
+                    <AboutMeInfo>
+                    {t('Sobre_About2.1')}
                     </AboutMeInfo>
 
                 </AboutMeCont>
             </AboutMeContainer>
-            <SecondParagraph>Gracias a ellos hoy puedo invitarte a vivas la experiencia amorosa de contactarte con tus ángeles a través mío para transformar, sanar y equilibrar tu vida.
+            <SecondParagraph>{t('Sobre_SecondP.1')}
  </SecondParagraph>
 
         </SobreMiContainer>
