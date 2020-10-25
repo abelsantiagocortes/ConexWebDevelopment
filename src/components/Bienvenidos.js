@@ -2,13 +2,13 @@ import React from 'react'
 import styled from 'styled-components/macro';
 import Social from './Social';
 import ExperienceCard from './ExperienceCard'
-
+import { useTranslation } from 'react-i18next';
 
 
 const BienvenidosContainer = styled.div`
     {
-        background-image: url("https://i.ibb.co/J7CmxDd/Grupo-30.png") ;
-        background-position: center;
+    background-image: url("https://i.ibb.co/J7CmxDd/Grupo-30.png") ;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
@@ -233,32 +233,33 @@ const Video = styled.iframe`
 
 
 function Bienvenidos() {
+    const { t } = useTranslation();
     return (
         <BienvenidosContainer>
             <BannerContainer>
                 <QuoteContainer>
-                    <Quote>La luz es nuestra virtud, la paciencia nuestro camino, y el amor nuestra religión.</Quote>
+                    <Quote>{t('Bien_Quote.1')}</Quote>
                 </QuoteContainer>
 
             </BannerContainer>
 
             <BienvenidosInfoContainer>
-                <BienvenidosTitulo>Bienvenidos</BienvenidosTitulo>
-                <BienvenidosInfo1>Cada experiencia de nuestra vida, cada suceso y cada persona que nos vamos encontrando, tienen la hermosa misión de ayudarnos a crecer, aprender y evolucionar. Los ángeles están aquí para acompañarte en ese maravilloso proceso, creando un camino de comprensión y amor que te lleva a la transformación y la sanación.</BienvenidosInfo1>
-                <BienvenidosInfo2>Gracias por llegar aquí.</BienvenidosInfo2>
+                <BienvenidosTitulo>{t('Bien_Title.1')}</BienvenidosTitulo>
+                <BienvenidosInfo1>{t('Bien_Info1.1')}</BienvenidosInfo1>
+                <BienvenidosInfo2>{t('Bien_Info2.1')}</BienvenidosInfo2>
                 <BienvenidosBotones>
-                    <BotonSobreMi>Sobre Mi</BotonSobreMi>
-                    <BotonTerapias>Terapias</BotonTerapias>
+                    <BotonSobreMi>{t('Bien_SobreMi.1')}</BotonSobreMi>
+                    <BotonTerapias>{t('Bien_Terapias.1')}</BotonTerapias>
                 </BienvenidosBotones>
             </BienvenidosInfoContainer>
 
-            <BienvenidosInfo3>Sobre Conexión y Consciencia...</BienvenidosInfo3>
+            <BienvenidosInfo3>{t('Bien_Info3.1')}</BienvenidosInfo3>
             <VideoContainer>
                 <VideoFrame>
                     <Video src="https://www.youtube.com/embed/cI4ryatVkKw" frameborder="0" allowfullscreen="" ></Video>
                 </VideoFrame>
             </VideoContainer>
-            <BienvenidosInfo3>Algunas Experiencias:</BienvenidosInfo3>
+            <BienvenidosInfo3>{t('Bien_Info3_2.1')}</BienvenidosInfo3>
             <ExperienceCard>
 
             </ExperienceCard>

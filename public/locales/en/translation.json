@@ -31,5 +31,37 @@
     ,
     "MoreArt":{
         "1":"More articles"
+    },
+
+    "Bien_Quote":{
+        "1":"Light is our virtue, patience our way, and love our religion."
+    },
+
+    "Bien_Title":
+    {
+        "1": "Welcome"
+    },
+    "Bien_Info1":{
+        "1": "Every life experience, every event and each person we meet, has the beautiful mission of helping us grow,learn and evolve. Angels are here to accompany you during this wonderful journey, creating a path of understanding and love, that leads you to healing and transformation."
+    },
+    "Bien_Info2":{
+        "1": "Thanks for getting here."
+    },
+    "Bien_SobreMi":{
+        "1": "About Me"
+    },
+    "Bien_Terapias":{
+        "1": "Therapies"
+    },
+    "Bien_Info3":{
+        "1": "About Connection and Consciousness"
+    },
+    "Bien_Info3_2":{
+        "1": "Some Experiences:"
     }
+
+
+    
+
+
 }

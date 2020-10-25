@@ -32,5 +32,42 @@
     ,
     "MoreArt":{
         "1":"Más Articulos"
+    },
+
+
+
+
+
+    "Bien_Quote":{
+        "1":"La luz es  virtud, la paciencia nuestro camino, y el amor nuestra religión."
+    },
+    "Bien_Title":
+    {
+        "1": "Bienvenidos"
+    },
+    "Bien_Info1":{
+        "1": "Cada experiencia de nuestra vida, cada suceso y cada persona que nos vamos encontrando, tienen la hermosa misión de ayudarnos a crecer, aprender y evolucionar. Los ángeles están aquí para acompañarte en ese maravilloso proceso, creando un camino de comprensión y amor que te lleva a la transformación y la sanación."
+    },
+    "Bien_Info2":{
+        "1": "Gracias por llegar aquí."
+    },
+    "Bien_SobreMi":{
+        "1": "Sobre Mi"
+    },
+    "Bien_Terapias":{
+        "1": "Terapias"
+    },
+    "Bien_Info3":{
+        "1": "Sobre Conexión y Consciencia..."
+    },
+    "Bien_Info3_2":{
+        "1": "Algunas Experiencias:"
     }
+
+
+
+
+
+
+
 }
