@@ -30,8 +30,8 @@ const IntroContainer = styled.div`
     
         h1{
             padding-top: 4em;
-            font-family: 'Sorts Mill Goudy';
-            font-size:2vw;
+            font-family: 'Lobster Two';
+            font-size:2.5vw;
             margin: 0;
             font-weight: 100 !important;
             vertical-align:middle;
@@ -51,8 +51,8 @@ const IntroContainer = styled.div`
          
         }
         h2{
-            font-family: 'Sorts Mill Goudy';
-            font-size:4vw;
+            font-family: 'Lobster Two';
+            font-size:6vw;
             margin: 0;
             font-weight: 100 !important;
             vertical-align:middle;

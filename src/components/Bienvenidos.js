@@ -91,8 +91,8 @@ const BienvenidosInfo1 = styled.h1`
 {
     text-align: center;
     font-size:1.5vw;
-    margin-left: 10%;
-    margin-right:10%;
+    margin-left: 20%;
+    margin-right:20%;
     margin-top: 2%;
     margin-bottom:2%;
     font-family: 'Sorts Mill Goudy';
@@ -122,7 +122,8 @@ const BienvenidosInfo3 = styled.h1`
 {
     font-size:2vw;
 
-    font-family: 'Sorts Mill Goudy';
+    font-family: 'Lobster Two';
+    color:#7B2CBF;
     text-align: Left;
     margin-top:5%;
     margin-left: 15%;
@@ -173,12 +174,13 @@ const BotonSobreMi = styled.button`
 const BotonTerapias = styled.button`
 {
     width: 30%;
-    background-color: #7B2CBF;
     color: white;
     padding: 20px;
     border-radius: 10px !important;
-    border: 0px;
     font-size: medium;
+    background-color: white !important;
+    color: #7B2CBF !important;
+    border: 2px solid #7B2CBF !important;
 
     @media (max-width: 550px) {
              

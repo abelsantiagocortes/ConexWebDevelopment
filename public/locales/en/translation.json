@@ -129,10 +129,12 @@
     },
     "Terap_TarotMore":{
         "1": "Healing tool in which through the use of tarot you can connect with your unconscious contents and bring them back for their recognition and work with your being. The tarot through its cards allows you to identify different archetypes, through which patterns, beliefs and unconscious wounds are revealed to allow you to carry out a healing and awakening therapeutic process. Tarot with its symbolism allows you to recognize your enormous transformative capacity and gives you the opportunity to apply it to your daily reality."
-    }
+    },
    
-
- 
-
-
+    "ViewMore":{
+        "1": "View more"
+    },
+    "ViewLess":{
+        "1": "View less"
+    }
 }

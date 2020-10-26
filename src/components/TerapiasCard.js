@@ -1,26 +1,32 @@
 import React,{useState} from 'react'
 import '../css/TerapiasCard.css';
+import { useTranslation } from 'react-i18next';
 
 function TerapiasCard({title,textLess,textMore,imgurl,id}) {
-    const [btnText, setBtnText] = useState('Ver Más');
+    const { t } = useTranslation();
+    const [btnText, setBtnText] = useState(t('ViewMore.1'));
+
     const [text, setTexts] = useState(textLess);
+
     const nameId="terapiacard"
     const idTer= nameId.concat(id);
     const handleClick = () =>{
-        if(btnText==='Ver Más'){
+
+        if(btnText===t('ViewMore.1')){
             document.getElementById(idTer).style.height = "800px"
             setTexts(textMore)
-            setBtnText('Ver Menos')
+            setBtnText(t('ViewLess.1'))
         }else{
-            document.getElementById(idTer).style.height = "500px"
+            document.getElementById(idTer).style.height = "540px"
             setTexts(textLess)
-            setBtnText('Ver Más')
+            setBtnText(t('ViewMore.1'))
         }
        
     }
+
     return (
         <div className="terapiascard" id={idTer}>
-            <h1>{title}</h1>
+            <h1 >{title}</h1>
             <img src={imgurl} 
             alt="timage" 
             border="0"></img>

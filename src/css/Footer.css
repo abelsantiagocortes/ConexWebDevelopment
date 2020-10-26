@@ -8,6 +8,9 @@
     justify-content: space-between;
     align-items: center;
 }
+.footer  h5{
+    font-size: small;
+}
 .footer__socialLinks img{
     width: 40px ;
     margin: 10px;

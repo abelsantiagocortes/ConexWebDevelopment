@@ -2,6 +2,7 @@ import React from 'react'
 import '../css/Footer.css'
 import { useTranslation } from 'react-i18next';
 import styled from 'styled-components/macro';
+import { useHistory } from "react-router-dom";
 
 const NavLogo = styled.img`
 {
@@ -12,7 +13,11 @@ const NavLogo = styled.img`
 }`
 function Footer() {
     const { i18n } = useTranslation();
+    const history = useHistory();
+
     function changeLanguage(lang) {
+        history.push("/");
+
         i18n.changeLanguage(lang);
         console.log(lang)
     }

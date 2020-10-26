@@ -50,7 +50,7 @@
   }
 .contacto__formData > form > textarea{
     height:150px;
-    width: 450px;
+    width: 90%;
     border-radius: 30px;
     padding: 30px;
     padding-left: 20px;
@@ -72,17 +72,9 @@
     text-align: center;
 }
 @media only screen and (max-width: 550px) {
-    .contacto__formData > form > textarea{
-        width: 350px;
-        
-    }
     .contacto__form > img{
         margin-right: 0px;
+        height: 150px;
     }
 }
-@media only screen and (max-width: 450px) {
-    .contacto__formData > form > textarea{
-        width: 205px;
-    }
-   
-}
+

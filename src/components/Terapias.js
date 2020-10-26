@@ -4,6 +4,7 @@ import '../css/Terapias.css';
 import TerapiasCard from '../components/TerapiasCard'
 import Social from './Social';
 import { useTranslation } from 'react-i18next';
+
 const TerapiasContainer = styled.div`
     {
         
@@ -17,13 +18,14 @@ const TerapiasContainer = styled.div`
 
 function Terapias() {
     const { t } = useTranslation();
+
     return (
         <TerapiasContainer className="terapias">
             <Social/>
             <div className="terapias__bannerContainer">
                 <h1>{t('Terap_MisTerapias.1')}</h1>
             </div>
-            <div className="terapias__cards">
+            <div  className="terapias__cards">
 
                 <TerapiasCard title={t('Terap_TerapiasAngelesTitle.1')}
                     textLess={t('Terap_TerapiaAngeles.1')}
