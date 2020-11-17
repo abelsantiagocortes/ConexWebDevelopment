@@ -1,6 +1,7 @@
 .contacto > h1{
     color: #7B2CBF;
     text-align: center;
+    margin-top: 40px;
 }
 .contacto__bannerContainer{
     background-image: url("https://i.ibb.co/vLvyX58/Grupo-de-desplazamiento-2.png") ;
