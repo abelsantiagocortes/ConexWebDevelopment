@@ -13,11 +13,9 @@ function TerapiasCard({title,textLess,textMore,imgurl,id}) {
     const handleClick = () =>{
 
         if(btnText===t('ViewMore.1')){
-            document.getElementById(idTer).style.height = "800px"
             setTexts(textMore)
             setBtnText(t('ViewLess.1'))
         }else{
-            document.getElementById(idTer).style.height = "540px"
             setTexts(textLess)
             setBtnText(t('ViewMore.1'))
         }

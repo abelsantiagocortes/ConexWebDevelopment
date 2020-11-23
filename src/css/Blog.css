@@ -35,6 +35,8 @@
 }
 .blog__ContentWelcome > p{
     color: #707070;
+    text-align: center;
+    margin: unset;
 }
 .blog__Content{
     display: flex;
