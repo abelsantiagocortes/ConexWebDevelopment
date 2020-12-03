@@ -13,7 +13,7 @@ const StyledNavBar = styled.nav`
         top: 0;
         z-index: 100;
         justify-content: space-between;
-        height: 80px;
+        height: 100px;
         width: 100%;
         font-family: 'Lobster Two', regular;
         font-size: 1vw;
@@ -52,7 +52,7 @@ const NavLinks = styled.nav`
 
 const NavLogo= styled.img`
 {
-    width: 130px;
+    width: 200px;
     object-fit: contain;
     margin: 5x;
     margin-right: 20px;
@@ -98,7 +98,7 @@ function NavBar() {
     return (
         <StyledNavBar>
             <LinkLogo to="/bienvenidos">
-                <NavLogo />
+                <NavLogo src="https://i.ibb.co/8sZFms8/Logo-Conex.png" alt="Logo-Conex" border="0"/>
                 <h1>Conexión y Consciencia</h1>
             </LinkLogo>
             <NavLinks>

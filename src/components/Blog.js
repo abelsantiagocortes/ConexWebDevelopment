@@ -137,7 +137,16 @@ function Blog() {
 
                 />
                 <h1>Entradas pasadas...</h1>
-                <BlogCard />
+                <BlogCard
+                     title="Cree en ti (Artículo del mes)"
+                     date="23/11/2020"
+                     content={
+                         <div> 
+                             
+                         </div>
+                     }
+                     author="Yelitza La-Rotta"
+                />
                 <BlogCard />
                 <BlogCard />
             </div>
