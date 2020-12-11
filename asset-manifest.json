@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/ConexWebDevelopment/static/css/main.1c0b2a36.chunk.css",
+    "main.js": "/ConexWebDevelopment/static/js/main.9dbabd12.chunk.js",
+    "main.js.map": "/ConexWebDevelopment/static/js/main.9dbabd12.chunk.js.map",
+    "runtime-main.js": "/ConexWebDevelopment/static/js/runtime-main.24fda760.js",
+    "runtime-main.js.map": "/ConexWebDevelopment/static/js/runtime-main.24fda760.js.map",
+    "static/css/2.2a86faee.chunk.css": "/ConexWebDevelopment/static/css/2.2a86faee.chunk.css",
+    "static/js/2.c9f8dea4.chunk.js": "/ConexWebDevelopment/static/js/2.c9f8dea4.chunk.js",
+    "static/js/2.c9f8dea4.chunk.js.map": "/ConexWebDevelopment/static/js/2.c9f8dea4.chunk.js.map",
+    "index.html": "/ConexWebDevelopment/index.html",
+    "precache-manifest.2b733dfa850c261efbd55659420ffb0c.js": "/ConexWebDevelopment/precache-manifest.2b733dfa850c261efbd55659420ffb0c.js",
+    "service-worker.js": "/ConexWebDevelopment/service-worker.js",
+    "static/css/2.2a86faee.chunk.css.map": "/ConexWebDevelopment/static/css/2.2a86faee.chunk.css.map",
+    "static/css/main.1c0b2a36.chunk.css.map": "/ConexWebDevelopment/static/css/main.1c0b2a36.chunk.css.map",
+    "static/js/2.c9f8dea4.chunk.js.LICENSE.txt": "/ConexWebDevelopment/static/js/2.c9f8dea4.chunk.js.LICENSE.txt",
+    "static/media/getFetch.cjs": "/ConexWebDevelopment/static/media/getFetch.013f0b90.cjs"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.24fda760.js",
+    "static/css/2.2a86faee.chunk.css",
+    "static/js/2.c9f8dea4.chunk.js",
+    "static/css/main.1c0b2a36.chunk.css",
+    "static/js/main.9dbabd12.chunk.js"
+  ]
+}
