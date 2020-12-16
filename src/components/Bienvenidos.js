@@ -232,44 +232,50 @@ const Video = styled.iframe`
    
 }`
 
-
-
 function Bienvenidos() {
-    const { t } = useTranslation();
-    return (
-        <BienvenidosContainer>
-            <BannerContainer>
-                <QuoteContainer>
-                    <Quote>{t('Bien_Quote.1')}</Quote>
-                </QuoteContainer>
-
-            </BannerContainer>
-
-            <BienvenidosInfoContainer>
-                <BienvenidosTitulo>{t('Bien_Title.1')}</BienvenidosTitulo>
-                <BienvenidosInfo1>{t('Bien_Info1.1')}</BienvenidosInfo1>
-                <BienvenidosInfo2>{t('Bien_Info2.1')}</BienvenidosInfo2>
-                <BienvenidosBotones>
-                    <BotonSobreMi>{t('Bien_SobreMi.1')}</BotonSobreMi>
-                    <BotonTerapias>{t('Bien_Terapias.1')}</BotonTerapias>
-                </BienvenidosBotones>
-            </BienvenidosInfoContainer>
-
-            <BienvenidosInfo3>{t('Bien_Info3.1')}</BienvenidosInfo3>
-            <VideoContainer>
-                <VideoFrame>
-                    <Video src="https://www.youtube.com/embed/2iiIaqP2_0g" frameborder="0" allowfullscreen="" ></Video>
-                </VideoFrame>
-            </VideoContainer>
-            <BienvenidosInfo3>{t('Bien_Info3_2.1')}</BienvenidosInfo3>
-            <ExperienceCard>
-
-            </ExperienceCard>
-
-            <Social />
-
-        </BienvenidosContainer>
-    )
+    const { t, ready } = useTranslation();
+    console.log(ready)
+    if(ready){
+        return (
+            <BienvenidosContainer>
+                <BannerContainer>
+                    <QuoteContainer>
+                        <Quote>{t('Bien_Quote.1')}</Quote>
+                    </QuoteContainer>
+    
+                </BannerContainer>
+    
+                <BienvenidosInfoContainer>
+                    <BienvenidosTitulo>{t('Bien_Title.1')}</BienvenidosTitulo>
+                    <BienvenidosInfo1>{t('Bien_Info1.1')}</BienvenidosInfo1>
+                    <BienvenidosInfo2>{t('Bien_Info2.1')}</BienvenidosInfo2>
+                    <BienvenidosBotones>
+                        <BotonSobreMi>{t('Bien_SobreMi.1')}</BotonSobreMi>
+                        <BotonTerapias>{t('Bien_Terapias.1')}</BotonTerapias>
+                    </BienvenidosBotones>
+                </BienvenidosInfoContainer>
+    
+                <BienvenidosInfo3>{t('Bien_Info3.1')}</BienvenidosInfo3>
+                <VideoContainer>
+                    <VideoFrame>
+                        <Video src="https://www.youtube.com/embed/2iiIaqP2_0g" frameborder="0" allowfullscreen="" ></Video>
+                    </VideoFrame>
+                </VideoContainer>
+                <BienvenidosInfo3>{t('Bien_Info3_2.1')}</BienvenidosInfo3>
+                <ExperienceCard>
+    
+                </ExperienceCard>
+    
+                <Social />
+    
+            </BienvenidosContainer>
+        )
+    }else{
+        return(
+            <h1>Loading..</h1>
+         )
+    }
+    
 }
 
 export default Bienvenidos

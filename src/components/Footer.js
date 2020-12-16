@@ -31,7 +31,7 @@ function Footer() {
                         <h5  >English</h5>
                         <img alt="" src='https://i.ibb.co/p4BLGMp/english-language.png' />
                     </div>
-                    <div onClick={() => changeLanguage('es')} className="footer__languajepickerEn">
+                    <div onClick={() => changeLanguage('sp')} className="footer__languajepickerEn">
                         <h5>Español</h5>
                         <img alt="" src='https://i.ibb.co/8Dc1WGP/spanish-language.png' />
                     </div>
