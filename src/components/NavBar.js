@@ -68,9 +68,13 @@ const LinkLogo = styled(Link)`
     display: flex;
     margin-right: 20px;
     align-items: center;
-    text-decoration: none !important;;
     color: #7B2CBF;
     width:60%;
+    :hover{
+        text-decoration: none !important;
+        color: #7B2CBF;
+
+    }
     h1 { 
         font-size: 2vw;
         text-decoration: none !important;;

@@ -59,9 +59,9 @@ function Blog() {
                 </div>
                 {form &&
                     <form className="blog__ContentForm" onSubmit={handleSubmit}>
-                        <label type="email">Ingrese su email para actualizacion mensual</label>
+                        <label type="email">{t('monthblog.1')}</label>
                         <input type="email" id="email" name="email" />
-                        <input id="submit" type="submit" value="Enviar!"></input>
+                        <input id="submit" type="submit" value={t('Send.1')}></input>
                     </form>
                 }
 

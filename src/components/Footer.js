@@ -8,7 +8,7 @@ const NavLogo = styled.img`
 {
     width: 100px;
     object-fit: contain;
-    
+    margin: 4vh;
     
 }`
 function Footer() {
@@ -24,7 +24,7 @@ function Footer() {
     return (
         <div className="footer">
             <div className="footer__logoLang">
-                <NavLogo />
+                <NavLogo src="https://i.ibb.co/pLJSqqs/whitelogo.png"/>
                 <h3>Conexión y Consciencia</h3>
                 <div className="footer__languajepicker">
                     <div onClick={() => changeLanguage('en')} className="footer__languajepickerEn">
@@ -40,9 +40,9 @@ function Footer() {
             </div>
 
             <div className="footer__socialLinks">
-                <a href="https://www.facebook.com" className="facebook"><img alt="" src='https://i.ibb.co/MNMxD7M/facebook.png' /></a>
-                <a href="https://www.instagram.com" className="youtube"><img alt="" src='https://i.ibb.co/dWTdwMS/Grupo-25.png' /></a>
-                <a href="https://www.youtube.com" className="instagram"><img alt="" src='https://i.ibb.co/1MrLW7G/Grupo-16.png' /></a>
+                <a href="https://www.facebook.com/conexionyconsciencia" className="facebook"><img alt="" src='https://i.ibb.co/MNMxD7M/facebook.png' /></a>
+                <a href="https://www.youtube.com/channel/UCFLEejhLRAtVn7yty5LPFCg" className="youtube"><img alt="" src='https://i.ibb.co/dWTdwMS/Grupo-25.png' /></a>
+                <a href="https://www.instagram.com" className="instagram"><img alt="" src='https://i.ibb.co/1MrLW7G/Grupo-16.png' /></a>
             </div>
 
 
