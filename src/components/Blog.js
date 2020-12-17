@@ -69,7 +69,7 @@ function Blog() {
                     title="Cree en ti (Artículo del mes)"
                     date="23/11/2020"
                     content={
-                        <div> 
+                        <div>
                             Desde que inicié mi contacto con los ángeles y comencé a trabajar como su canal,
                             comencé a encontrarme con personas que descalificaban mi trabajo. Hace 15 años,
                             cuando inicié, yo me encontraba llena de dudas, de miedos y de incertidumbres; mi
@@ -138,14 +138,81 @@ function Blog() {
                 />
                 <h1>Entradas pasadas...</h1>
                 <BlogCard
-                     title="Cree en ti (Artículo del mes)"
-                     date="23/11/2020"
-                     content={
-                         <div> 
-                             
+                    title="Volver al Centro"
+                    date="25/10/2020"
+                    content={
+                        <div>
+                            Las situaciones difíciles hacen parte de la vida de todos. A veces, unas son más
+                            complicadas, difíciles y dolorosas que otras, pero indudablemente, son esas, las más
+                            fuertes las que nos llevan a las transformaciones más grandes.<br />
+                            Nos dicen los ángeles que el objetivo de toda situación que nos genera crisis o nos
+                            desequilibra o nos produce malestar, es volver al centro y cuando lo dicen señalan el
+                            corazón, y lo indican como señalando la puerta de entrada a un nuevo mundo. Y es
+                            verdad… creemos que somos unos, pero en los momentos difíciles sabemos
+                            realmente no solo de que estamos hechos, sino que también podemos determinar
+                            qué nos llevó a experimentar esa situación.<br />
+                            Volver al centro significa volver al punto corazón (si ahí justamente en el centro del
+                            pecho), y empezar a mirar y a develar los misterios de la persona que somos. Pero
+                            para poder hacerlo necesitamos aprender a vernos sin juicio, sin crítica. Necesitamos
+                            vernos con todo el amor incondicional del que nos ha dotado el universo, Dios, o
+                            como le llames en tu creencia particular.<br />
+                            Mirarnos sin juicio y con amor, significa mirar dentro sin culpa, sin pesar, sin
+                            compadecimiento, solamente mirar, como quien ve por primera vez algo con la
+                            inocencia de un niño. Cuando podemos ver nuestra vida, nuestras experiencias,
+                            nuestros comportamientos, pensamientos y reacciones sin juzgarnos, comenzamos a
+                            descubrir patrones, a ver las heridas, a entender nuestras creencias. Comenzamos a
+                            comprender el camino que hemos llevado y tenemos la oportunidad de reflexionar
+                            sobre los cambios que necesitamos hacer para poder andar senderos distintos.
+                            Estar en el centro es estar conectados con lo mas profundo de nosotros, es estar
+                            presentes siempre, sabiendo para y desde qué lugar tomamos cada decisión,
+                            usamos nuestros patrones y manifestamos nuestras creencias.<br />
+                            Vuelve al centro; cuando te enfocas en tu centro, dejas de culpar a otros y a ti mismo
+                            de lo que te sucede. En el centro de tu ser, empiezas a liberar a los demás de la
+                            responsabilidad de tu felicidad, tu bienestar y tu paz. En tu centro, desarrollas la
+                            destreza de observarte y proveerte aquello que de verdad necesitas.<br />
+                            ¿Como mantenernos en nuestro centro?. Dicen los maestros angélicos que lo primero
+                            es bendecir y agradecer todo. Esa es la llave de acceso, aunque sea difícil, aunque
+                            sea complicado, cuando agradecemos y bendecimos, ponemos nuestra vibración en
+                            otro nivel, un nivel más sutil que nos facilita fluir. Cuando agradecemos abrimos el
+                            corazón a recibir ayuda y bienestar. La bendición y el agradecimiento constantes, le
+                            hacen comprender a nuestro ser, que sea cual sea la situación que estemos viviendo,
+                            todo pasará y estaremos bien nuevamente.<br />
+                            Hacer algo que nos genere paz también nos conecta con nosotros. Esto puede
+                            implicar cualquier actividad: meditación, oración, deporte, artes manuales, etc.,
+                            cualquier actividad que calme tu mente y te produzca paz, ayuda.<br />
+                            El control de tu pensamiento. Aquí es importante comprender que tienes la capacidad
+                            natural de observar y hacer cambios en tu proceso mental. Las emociones, por lo
+                            general son producto de los pensamientos con los que abordamos una situación. Y
+                            aunque es a veces demandante, la identificación de nuestras ideas y productos
+                            mentales es clave para el proceso de bienestar. No se trata de ser todo el tiempo
+                            positivo, desconectándonos de la realidad que nos rodea. Se trata de poder ver qué
+                            producimos a cada momento en nuestra mente e ir modificando estos contenidos
+                            generando unos nuevos que nos sean de ayuda.<br />
+                            Procesos terapéuticos. A veces las intensidad de lo que sentimos no nos permite
+                            tener claridad y las situaciones nos sobrepasan. En ocasiones recurrir a terapia se
+                            vuelve un dilema, porque podemos llegar a sentirnos débiles al no poder responder
+                            por nuestro ser. Nuestros ángeles nos dicen: “No hay proceso mas valiente que ser
+                            responsable de ti mismo, y la terapia es un recurso que te guía en ese camino”. Pide
+                            a tus guías y maestros angélicos, que te ayuden a encontrar aquella terapia y aquel
+                            terapeuta que es el perfecto para ti. Ellos te harán llegar lo que necesitas.<br />
+                            Rendirte a lo que es. Con rendirse los ángeles se refieren a aceptar las cosas como
+                            son y confiar en que es perfecto así. Cuando nos resistimos a atravesar situaciones
+                            que no nos gustan o que no son como esperábamos, el proceso se vuelve mas
+                            complejo porque la claridad disminuye y las emociones se vuelven mas intensas y
+                            mas difíciles de asimilar. Cuando aceptas lo que es como es, dicen nuestros ángeles,
+                            nos das entrada para ayudarte, para guiarte y para hacer llegar a ti los recursos
+                            necesarios para hacer el aprendizaje que esta situación te trae. De la misma forma, la
+                            claridad que te proporciona la paz de saber que todo es perfecto como es, te permite
+                            encontrar soluciones y hacer contacto con todas las herramientas internas que
+                            posees para enfrentar cada evento.<br />
+                            Estar en nuestro centro es una habilidad desarrollable; estamos perfectamente
+                            diseñados emocional, física y mentalmente para volver allí y cada situación que nos
+                            presenta la vida y nos saca de nuestra zona de confort, tiene el gran propósito de
+                            ayudarnos y recordarnos cuál es nuestro verdadero lugar.<br />
+                            Bendiciones Infinitas
                          </div>
-                     }
-                     author="Yelitza La-Rotta"
+                    }
+                    author="Yelitza La-Rotta"
                 />
                 <BlogCard />
                 <BlogCard />

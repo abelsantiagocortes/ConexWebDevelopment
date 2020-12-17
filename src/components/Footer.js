@@ -42,7 +42,7 @@ function Footer() {
             <div className="footer__socialLinks">
                 <a href="https://www.facebook.com/conexionyconsciencia" className="facebook"><img alt="" src='https://i.ibb.co/MNMxD7M/facebook.png' /></a>
                 <a href="https://www.youtube.com/channel/UCFLEejhLRAtVn7yty5LPFCg" className="youtube"><img alt="" src='https://i.ibb.co/dWTdwMS/Grupo-25.png' /></a>
-                <a href="https://www.instagram.com" className="instagram"><img alt="" src='https://i.ibb.co/1MrLW7G/Grupo-16.png' /></a>
+                <a href="https://www.instagram.com/myconexion/" className="instagram"><img alt="" src='https://i.ibb.co/1MrLW7G/Grupo-16.png' /></a>
             </div>
 
 
