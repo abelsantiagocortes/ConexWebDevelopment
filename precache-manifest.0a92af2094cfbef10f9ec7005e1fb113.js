@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "aa68a54a9529fbbb90fafadbc188ce52",
+    "revision": "79ce3dc2a981855ed4603b67f7bc0b2f",
     "url": "/ConexWebDevelopment/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/ConexWebDevelopment/static/css/2.2a86faee.chunk.css"
   },
   {
-    "revision": "257577ced529c0007130",
+    "revision": "5bca20a50e4f52840223",
     "url": "/ConexWebDevelopment/static/css/main.f71de2d7.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/ConexWebDevelopment/static/js/2.5708ecba.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "257577ced529c0007130",
-    "url": "/ConexWebDevelopment/static/js/main.2080b8c4.chunk.js"
+    "revision": "5bca20a50e4f52840223",
+    "url": "/ConexWebDevelopment/static/js/main.0a86c84e.chunk.js"
   },
   {
     "revision": "96b66bee4e1c1e6dc86f",
