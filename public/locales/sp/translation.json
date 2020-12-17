@@ -1,4 +1,14 @@
 {
+    "nav_bienvenidos":{
+        "1":"Bienvenidos"
+    },
+    "nav_aboutme":{
+        "1":"Sobre mí"
+    },
+    "nav_therapies":{
+        "1":"Terapias"
+    },
+
     "ContactQuestion":{
         "1":"¿Alguna pregunta?"
     },

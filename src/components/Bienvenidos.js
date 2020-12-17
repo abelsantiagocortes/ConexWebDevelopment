@@ -1,8 +1,9 @@
-import React from 'react'
+import React, { useCallback } from 'react'
 import styled from 'styled-components/macro';
 import Social from './Social';
 import ExperienceCard from './ExperienceCard'
 import { useTranslation } from 'react-i18next';
+import { Link, NavLink, useHistory } from 'react-router-dom';
 
 
 const BienvenidosContainer = styled.div`
@@ -181,6 +182,7 @@ const BotonTerapias = styled.button`
     background-color: white !important;
     color: #7B2CBF !important;
     border: 2px solid #7B2CBF !important;
+    min-width:100px;
 
     @media (max-width: 550px) {
              
@@ -234,27 +236,32 @@ const Video = styled.iframe`
 
 function Bienvenidos() {
     const { t, ready } = useTranslation();
-    console.log(ready)
-    if(ready){
+    const history = useHistory();
+    const handleOnClickMe = useCallback(() => history.push('/sobremi'), [history]);
+    const handleOnClickTer = useCallback(() => history.push('/terapias'), [history]);
+
+    if (ready) {
         return (
             <BienvenidosContainer>
                 <BannerContainer>
                     <QuoteContainer>
                         <Quote>{t('Bien_Quote.1')}</Quote>
                     </QuoteContainer>
-    
+
                 </BannerContainer>
-    
+
                 <BienvenidosInfoContainer>
                     <BienvenidosTitulo>{t('Bien_Title.1')}</BienvenidosTitulo>
                     <BienvenidosInfo1>{t('Bien_Info1.1')}</BienvenidosInfo1>
                     <BienvenidosInfo2>{t('Bien_Info2.1')}</BienvenidosInfo2>
                     <BienvenidosBotones>
-                        <BotonSobreMi>{t('Bien_SobreMi.1')}</BotonSobreMi>
-                        <BotonTerapias>{t('Bien_Terapias.1')}</BotonTerapias>
+                        <BotonSobreMi onClick={handleOnClickMe}>{t('Bien_SobreMi.1')}</BotonSobreMi>
+
+
+                        <BotonTerapias  onClick={handleOnClickTer} >{t('Bien_Terapias.1')}</BotonTerapias>
                     </BienvenidosBotones>
                 </BienvenidosInfoContainer>
-    
+
                 <BienvenidosInfo3>{t('Bien_Info3.1')}</BienvenidosInfo3>
                 <VideoContainer>
                     <VideoFrame>
@@ -263,19 +270,19 @@ function Bienvenidos() {
                 </VideoContainer>
                 <BienvenidosInfo3>{t('Bien_Info3_2.1')}</BienvenidosInfo3>
                 <ExperienceCard>
-    
+
                 </ExperienceCard>
-    
+
                 <Social />
-    
+
             </BienvenidosContainer>
         )
-    }else{
-        return(
+    } else {
+        return (
             <h1>Loading..</h1>
-         )
+        )
     }
-    
+
 }
 
 export default Bienvenidos
