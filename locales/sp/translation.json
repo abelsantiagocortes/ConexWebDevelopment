@@ -38,12 +38,19 @@
     },
     "Subscribe":{
         "1":"Suscribirme"
-    }
-    ,
+    },
+    "Send":{
+        "1":"Enviar!"
+    },
+    
     "MoreArt":{
         "1":"Más Articulos"
     },
+    
 
+    "monthblog":{
+        "1":"Ingrese su email para actualizacion mensual"
+    },
 
 
 

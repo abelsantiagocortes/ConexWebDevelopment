@@ -35,10 +35,18 @@
     "Welcomeblog":{
         "1":"Welcome to the blog"
     },
+
     "Subscribe":{
         "1":"Subscribe"
-    }
-    ,
+    },
+
+    "Send":{
+        "1":"Send!"
+    },
+    "monthblog":{
+        "1":"Email for monthly update"
+    },
+
     "MoreArt":{
         "1":"More articles"
     },
