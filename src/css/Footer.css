@@ -48,3 +48,9 @@
         display: none; 
     }  
 }
+@media only screen and (max-width: 300px) {
+    .footer__languajepicker{
+        display: none;
+    }
+    
+}

@@ -3,12 +3,20 @@ import '../css/Footer.css'
 import { useTranslation } from 'react-i18next';
 import styled from 'styled-components/macro';
 import { useHistory } from "react-router-dom";
+import '../css/Social.css';
 
 const NavLogo = styled.img`
 {
     width: 100px;
     object-fit: contain;
     margin: 4vh;
+    
+}`
+
+const WaImg = styled.img`
+{
+    width: 40px;
+    border-radius: 20px ;
     
 }`
 function Footer() {
@@ -24,7 +32,7 @@ function Footer() {
     return (
         <div className="footer">
             <div className="footer__logoLang">
-                <NavLogo src="https://i.ibb.co/pLJSqqs/whitelogo.png"/>
+                <NavLogo src="https://i.ibb.co/pLJSqqs/whitelogo.png" />
                 <h3>Conexión y Consciencia</h3>
                 <div className="footer__languajepicker">
                     <div onClick={() => changeLanguage('en')} className="footer__languajepickerEn">
@@ -40,6 +48,7 @@ function Footer() {
             </div>
 
             <div className="footer__socialLinks">
+                <a href="https://www.whatsapp.com" className="whatsapp"><WaImg alt="" src='https://i.ibb.co/7g13zC5/whatsapp.png' /></a>
                 <a href="https://www.facebook.com/conexionyconsciencia" className="facebook"><img alt="" src='https://i.ibb.co/MNMxD7M/facebook.png' /></a>
                 <a href="https://www.youtube.com/channel/UCFLEejhLRAtVn7yty5LPFCg" className="youtube"><img alt="" src='https://i.ibb.co/dWTdwMS/Grupo-25.png' /></a>
                 <a href="https://www.instagram.com/myconexion/" className="instagram"><img alt="" src='https://i.ibb.co/1MrLW7G/Grupo-16.png' /></a>

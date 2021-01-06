@@ -4,6 +4,7 @@ import Social from './Social';
 import ExperienceCard from './ExperienceCard'
 import { useTranslation } from 'react-i18next';
 import { Link, NavLink, useHistory } from 'react-router-dom';
+import Idiomas from './Idiomas';
 
 
 const BienvenidosContainer = styled.div`
@@ -274,6 +275,7 @@ function Bienvenidos() {
                 </ExperienceCard>
 
                 <Social />
+                <Idiomas/>
 
             </BienvenidosContainer>
         )
