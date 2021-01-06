@@ -1,7 +1,7 @@
 import React from 'react'
 import '../css/BlogCard.css';
 
-function BlogCard({ title, date, content,author }) {
+function BlogCard({ title, date, content, author,link }) {
     return (
         <div className="blogcard">
             <h1>{title}</h1>
@@ -11,8 +11,15 @@ function BlogCard({ title, date, content,author }) {
                     {content}
                 </p>
                 <h3>{author}</h3>
+                <div className="blogcardButtondiv">
+                    <a href={link}>
 
+                        <button className="blogcard__link">Ver articulo completo</button>
+                    </a>
+
+                </div>
             </div>
+
         </div>
     )
 }

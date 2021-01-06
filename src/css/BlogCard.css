@@ -27,3 +27,18 @@
     font-size: x-large;
     font-family: 'Lobster', cursive; 
 }
+.blogcard__link{
+    min-width: 150px;
+    background-color: #7B2CBF;
+    color: white;
+    padding: 10px;
+    border-radius: 10px !important;
+    border: 0px;
+    font-size: medium;
+}
+.blogcardButtondiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1.5rem;
+}
