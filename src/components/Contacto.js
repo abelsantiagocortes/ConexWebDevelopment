@@ -4,6 +4,7 @@ import '../css/Contacto.css';
 import Social from './Social';
 import { useTranslation } from 'react-i18next';
 import { functions } from '../firebase';
+import Idiomas from './Idiomas';
 
 
 const ContactoContainer = styled.div`
@@ -39,6 +40,8 @@ function Contacto() {
     return (
         <ContactoContainer className="contacto">
             <Social />
+            <Idiomas/>
+
             <div className="contacto__bannerContainer">
                 <h1>{t('Contact.1')}</h1>
             </div>

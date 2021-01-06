@@ -3,6 +3,8 @@ import styled from 'styled-components/macro';
 import '../css/Blog.css';
 import BlogCard from './BlogCard';
 import Social from './Social';
+import Idiomas from './Idiomas';
+
 import { useTranslation } from 'react-i18next';
 import { useState } from 'react';
 
@@ -37,6 +39,7 @@ function Blog() {
         <BlogContainer className="blog">
 
             <Social />
+            <Idiomas/>
 
             <div className="blog__bannerContainer">
                 <h1>Blog</h1>

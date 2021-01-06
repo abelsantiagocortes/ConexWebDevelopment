@@ -1,6 +1,8 @@
 import React from 'react'
 import styled from 'styled-components/macro';
 import Social from './Social';
+import Idiomas from './Idiomas';
+
 import { useTranslation } from 'react-i18next';
 const SobreMiContainer = styled.div`
     {
@@ -325,6 +327,8 @@ function SobreMi() {
     return (
         <SobreMiContainer>
             <Social/>
+            <Idiomas/>
+
             <IntroContainer>
 
                 <NameContainer>

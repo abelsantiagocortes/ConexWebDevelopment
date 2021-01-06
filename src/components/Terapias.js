@@ -4,6 +4,7 @@ import '../css/Terapias.css';
 import TerapiasCard from '../components/TerapiasCard'
 import Social from './Social';
 import { useTranslation } from 'react-i18next';
+import Idiomas from './Idiomas';
 
 const TerapiasContainer = styled.div`
     {
@@ -22,6 +23,8 @@ function Terapias() {
     return (
         <TerapiasContainer className="terapias">
             <Social/>
+            <Idiomas/>
+
             <div className="terapias__bannerContainer">
                 <h1>{t('Terap_MisTerapias.1')}</h1>
             </div>
