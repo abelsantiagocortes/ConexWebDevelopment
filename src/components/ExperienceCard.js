@@ -14,8 +14,8 @@ const CarouselCard = styled(Card)`
         height:25%;
         margin-left:15%;
         margin-right:15%;
-        
-
+        border: 2px solid rgba(0,0,0,.225);
+    
         
     }`
 
@@ -24,7 +24,8 @@ const CarouselCardBody = styled(Card.Body)`
         display:flex;
         flex-direction:row;
         vertical-align:middle;
-        
+  align-items : center;
+        margin-bottom:4em;
         @media (max-width: 550px) {
              
              flex-direction:column;
@@ -63,7 +64,7 @@ const StyledCarouselText = styled(Card.Text)`
     margin-left: 5%;
     margin-right:10%;
     margin-top:5%;
-    font-family: 'Sorts Mill Goudy';
+    margin-bottom:6em;
     font-weight: 100 !important;
     @media (max-width: 550px) {
              
