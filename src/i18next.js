@@ -24,10 +24,10 @@ i18n
     },
     react: {
       wait: true,
-      useSuspense: false,
+      useSuspense: true,
     },
     backend: {
-      loadPath: '/ConexWebDevelopment/locales/{{lng}}/{{ns}}.json',
+      loadPath: '/locales/{{lng}}/{{ns}}.json',
       crossDomain: false
     }
   });
