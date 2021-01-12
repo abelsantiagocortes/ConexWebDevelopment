@@ -24,7 +24,7 @@ i18n
     },
     react: {
       wait: true,
-      useSuspense: true,
+      useSuspense: false,
     },
     backend: {
       loadPath: '/locales/{{lng}}/{{ns}}.json',

@@ -127,7 +127,6 @@ function NavBar({ active }) {
         default:
             break;
     }
-    console.log(active,"aver")
     return (
         <StyledNavBar>
             <LinkLogo to="/bienvenidos">

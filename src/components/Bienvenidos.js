@@ -166,10 +166,17 @@ const BotonSobreMi = styled.button`
     border-radius: 10px !important;
     border: 0px;
     font-size: medium;
+    
+    @media (max-width: 650px) {
+        padding: 5px;
+
+    }
     @media (max-width: 550px) {
-            font-size: 4vw;
-            width: 100%;
-         }
+        font-size: 4vw;
+        width: 100%;
+        padding: 20px;
+
+}
 
 }`
 

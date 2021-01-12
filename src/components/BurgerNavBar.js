@@ -1,6 +1,7 @@
 import React    from 'react'
 import styled from 'styled-components'; 
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 
 const BurgerNavBar = styled.div`
@@ -52,20 +53,25 @@ const BurgerNavBar = styled.div`
 `;
 
 const StyledLink = styled(Link)`
-  text-decoration: none;
+  text-decoration: none !important;
 `;
 
 
 const RightNavBar = ({ open , handle }) => {
+    const { t, ready } = useTranslation();
 
     return (
         <BurgerNavBar open={open}  onClick={handle} >
+            <StyledLink to="/Buenvenidos" >
+                <h1>{t('nav_bienvenidos.1')}</h1>
+            </StyledLink>
+            <hr />
             <StyledLink to="/sobremi" >
-                <h1>Sobre Mí</h1>
+                <h1>{t('nav_aboutme.1')}</h1>
             </StyledLink>
             <hr />
             <StyledLink to="/Terapias" >
-                <h1>Terapias</h1>
+                <h1>{t('nav_therapies.1')}</h1>
             </StyledLink>
             <hr />
             <StyledLink to="/blog"  >
@@ -73,7 +79,7 @@ const RightNavBar = ({ open , handle }) => {
             </StyledLink>
             <hr />
             <StyledLink to="/contacto"  >
-                <h1>Contacto</h1>
+                <h1>{t('Contact.1')}</h1>
             </StyledLink>
             <hr />
            
