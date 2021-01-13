@@ -47,9 +47,7 @@ function Blog() {
             <div className="blog__Content">
                 <div className="blog__ContentWelcome">
                     <h1>{t('Welcomeblog.1')}</h1>
-                    <p>Cada palabra que los ángeles nos transmiten llega a nosotros como un regalo de
-                    sabiduría y aprendizaje. Disfruta la lectura y toma para tu vida
-                    aquello que resuene en tu corazón.</p>
+                    <p>{t('Welcomeblogtext.1')}</p>
                 </div>
 
                 <div className="blog__ContentBtns">
