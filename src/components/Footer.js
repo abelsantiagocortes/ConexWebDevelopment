@@ -27,7 +27,7 @@ function Footer() {
         history.push("/");
 
         i18n.changeLanguage(lang);
-        console.log(lang)
+
     }
     return (
         <div className="footer">

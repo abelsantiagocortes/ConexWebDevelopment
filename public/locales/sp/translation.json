@@ -15,6 +15,9 @@
     "Contact":{
         "1":"Contacto"
     },
+    "ContactAlert":{
+        "1":"Mensaje enviado con exito"
+    },
     "Name":{
         "1":"Nombre completo"
     }

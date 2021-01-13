@@ -4,9 +4,10 @@ import '../css/Blog.css';
 import BlogCard from './BlogCard';
 import Social from './Social';
 import Idiomas from './Idiomas';
-
 import { useTranslation } from 'react-i18next';
 import { useState } from 'react';
+import { functions } from '../firebase';
+
 
 const BlogContainer = styled.div`
     {
@@ -25,11 +26,16 @@ function Blog() {
     }
     const handleSubmit = (e) => {
         e.preventDefault();
-        const val = document.getElementById("email").value
+        const email = document.getElementById("email").value
 
-        if (val.length > 1) {
-            alert('Correo enviado' + val);
-            setform(false)
+        if (email.length > 1) {
+            var sendSubscriptionEmail = functions.httpsCallable('sendSubscriptionEmail');
+            sendSubscriptionEmail({ email: email }).then(result => {
+                alert(t('ContactAlert.1'))
+                window.location.reload();
+            }).catch(function (error) {
+                console.error("Error send email");
+            });
         } else {
             alert('Ingrese un correo');
         }
@@ -70,13 +76,9 @@ function Blog() {
                     title="Cree en ti (Artículo del mes)"
                     date="23/11/2020"
                     content={
-                        <div>
-                            Desde que inicié mi contacto con los ángeles y comencé a trabajar como su canal,
-                            comencé a encontrarme con personas que descalificaban mi trabajo. Hace 15 años,
-                            cuando inicié, yo me encontraba llena de dudas, de miedos y de incertidumbres; mi
-                            vida dio un vuelco cuando se hizo evidente que haría mi misión de vida transmitiendo
-                             sus mensajes...<br />
-                        </div>
+
+                        'Desde que inicié mi contacto con los ángeles y comencé a trabajar como su canal, comencé a encontrarme con personas que descalificaban mi trabajo. Hace 15 años,cuando inicié, yo me encontraba llena de dudas, de miedos y de incertidumbres; mi vida dio un vuelco cuando se hizo evidente que haría mi misión de vida transmitiendo sus mensajes...'
+
                     }
                     author="Yelitza La-Rotta"
                     link="https://drive.google.com/file/d/1hyXC8ZwtMAJb801L-gWo5WecP86rYYyd/view?usp=sharing"
@@ -87,18 +89,13 @@ function Blog() {
                     title="Volver al Centro"
                     date="25/10/2020"
                     content={
-                        <div>
-                            Las situaciones difíciles hacen parte de la vida de todos. A veces, unas son más
-                            complicadas, difíciles y dolorosas que otras, pero indudablemente, son esas, las más
-                            fuertes las que nos llevan a las transformaciones más grandes...<br />
-
-                        </div>
+                        'Las situaciones difíciles hacen parte de la vida de todos. A veces, unas son más complicadas, difíciles y dolorosas que otras, pero indudablemente, son esas, las más fuertes las que nos llevan a las transformaciones más grandes...'
                     }
                     author="Yelitza La-Rotta"
                     link="https://drive.google.com/file/d/18kjbjdhZTfwH3RCkqeHfG-diitdUMBpq/view?usp=sharing"
 
                 />
-                
+
             </div>
         </BlogContainer>
     )

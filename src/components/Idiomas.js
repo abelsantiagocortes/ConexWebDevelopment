@@ -2,19 +2,7 @@ import React from 'react'
 import { useTranslation } from 'react-i18next';
 import { useHistory } from 'react-router-dom';
 import styled from 'styled-components/macro';
-
-function Idiomas() {
-    const { i18n } = useTranslation();
-    const history = useHistory();
-
-    function changeLanguage(lang) {
-        history.push("/");
-
-        i18n.changeLanguage(lang);
-        console.log(lang)
-    }
-
-    const LangDiv = styled.div`
+const LangDiv = styled.div`
 
 {
     display: flex;
@@ -54,18 +42,17 @@ const LangImg = styled.img`
     transition: all 0.3s ease;
 
 }`
-/*const LangText = styled.h5`
+function Idiomas() {
+    const { i18n } = useTranslation();
+    const history = useHistory();
 
-{
-    text-align:center;
-    font-size: small;
-    cursor: pointer;
-    transition: all 0.3s ease;
+    function changeLanguage(lang) {
+        history.push("/");
 
-    :hover {
-        transform: scale(1.1);
+        i18n.changeLanguage(lang);
+        
     }
-}`*/
+
     return (
         <LangDiv>
             <div onClick={() => changeLanguage('en')} className="footer__languajepickerEn">

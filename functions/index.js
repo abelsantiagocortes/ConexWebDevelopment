@@ -6,18 +6,16 @@ const sgMail = require('@sendgrid/mail');
 sgMail.setApiKey(functions.config().sendgrid.key)
 
 const TEMPLATE_IDCONTACT = functions.config().templateid.key;
+const TEMPLATE_IDRESPONSECONTACT = functions.config().templateid2.key;
+const TEMPLATE_IDSUBS = functions.config().templateidsuscripcion.key;
+const TEMPLATE_IDRESSUBS = functions.config().templateidressuscripcion.key;
 
-// Create and Deploy Your First Cloud Functions
-// https://firebase.google.com/docs/functions/write-firebase-functions
-exports.helloWorld = functions.https.onRequest((request, response) => {
-    functions.logger.info("Hello logs!", { structuredData: true });
-    response.send("Hello from Firebase!");
-});
+
 
 exports.sendContactEmail = functions.https.onCall((data) => {
 
     const msg = {
-        to: data.email, // Change to your recipient
+        to: "seposorio17@gmail.com", // Change to your recipient
         from: 'conexionyconscienciadev@gmail.com', // Change to your verified sender
         template_id: TEMPLATE_IDCONTACT,
         subject: 'Mensaje de contacto',
@@ -30,7 +28,57 @@ exports.sendContactEmail = functions.https.onCall((data) => {
     sgMail
         .send(msg)
         .then(() => {
-           return console.log('Email sent')
+            const msg2 = {
+                to: data.email, // Change to your recipient
+                from: 'conexionyconscienciadev@gmail.com', // Change to your verified sender
+                template_id: TEMPLATE_IDRESPONSECONTACT,
+            }
+            sgMail
+                .send(msg2)
+                .then(() => {
+                    return console.log('Email sent')
+                })
+                .catch((error) => {
+                    console.error(error)
+                })
+            return console.log('Email sent')
+        })
+        .catch((error) => {
+            console.error(error)
+        })
+
+});
+
+exports.sendSubscriptionEmail = functions.https.onCall((data) => {
+
+    const msg = {
+        to: "seposorio17@gmail.com", // Change to your recipient
+        from: 'conexionyconscienciadev@gmail.com', // Change to your verified sender
+        template_id: TEMPLATE_IDSUBS,
+        dynamic_template_data: {
+            email: data.email,
+        }
+    }
+    sgMail
+        .send(msg)
+        .then(() => {
+            const msg2 = {
+                to: data.email, // Change to your recipient
+                from: 'conexionyconscienciadev@gmail.com', // Change to your verified sender
+                template_id: TEMPLATE_IDRESSUBS,
+                dynamic_template_data: {
+                    email: data.email,
+                }
+            }
+            sgMail
+                .send(msg2)
+                .then(() => {
+                    return console.log('Email sent')
+                })
+                .catch((error) => {
+                    console.error(error)
+                })
+            return console.log('Email sent')
         })
         .catch((error) => {
             console.error(error)

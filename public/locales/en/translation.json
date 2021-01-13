@@ -15,6 +15,9 @@
     "Contact":{
         "1":"Contact"
     },
+    "ContactAlert":{
+        "1":"Success send email"
+    },
     "Name":{
         "1":"Name"
     },

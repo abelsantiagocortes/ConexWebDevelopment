@@ -152,6 +152,7 @@ const QuoteImg = styled.img`
         
 
 }`
+/* 
 const BoxBack = styled.div`
 {
     width: 100%;
@@ -164,6 +165,7 @@ const BoxBack = styled.div`
     opacity: 0.4;
 
 }`
+*/
 const BoxTop = styled.div`
 {
 
@@ -191,7 +193,7 @@ const BoxTop = styled.div`
        
    }
 }`
-
+/* 
 const QuoteBox = styled.div`{
     width: 90%;
     vertical-align:middle;
@@ -208,7 +210,7 @@ const QuoteBox = styled.div`{
         
     }
 }`
-
+*/
 const FirstParagraph = styled.h1`{
     
     font-family: 'Sorts Mill Goudy';
@@ -265,6 +267,7 @@ const AboutMeInfo = styled.div`{
         
     }
 }`
+/*
 const AboutMeImg = styled.img`{
    width: auto;
    height: 22em;
@@ -289,6 +292,7 @@ const AboutMeImg2 = styled.img`{
        height: 16em;
     }
  }`
+ 
  const AboutMeImg3 = styled.img`{
     display:none;
     @media (max-width: 1220px) {
@@ -303,7 +307,7 @@ const AboutMeImg2 = styled.img`{
         width:70%;
     }
  }`
-
+*/
 
 const SecondParagraph = styled.h1`{
     

@@ -101,7 +101,7 @@ const LinkLogo = styled(Link)`
 
 
 function NavBar({ active }) {
-    const { t, ready } = useTranslation();
+    const {t} = useTranslation();
     let linkClassWelcome = "navbar-login__link";
     let linkClassMisAboutMe = "navbar-login__link";
     let linkClassTerap = "navbar-login__link";
@@ -134,7 +134,7 @@ function NavBar({ active }) {
                 <h1>Conexión y Consciencia</h1>
             </LinkLogo>
             <NavLinks>
-                <Link className to="/" className={linkClassWelcome } >
+                <Link to="/" className={linkClassWelcome} >
                     <h1>{t('nav_bienvenidos.1')}</h1>
                 </Link>
                 <Link to="/sobremi" className={ linkClassMisAboutMe} >

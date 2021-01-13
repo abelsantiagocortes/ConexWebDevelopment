@@ -58,7 +58,7 @@ const StyledLink = styled(Link)`
 
 
 const RightNavBar = ({ open , handle }) => {
-    const { t, ready } = useTranslation();
+    const { t } = useTranslation();
 
     return (
         <BurgerNavBar open={open}  onClick={handle} >
