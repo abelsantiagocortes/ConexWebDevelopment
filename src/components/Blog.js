@@ -8,7 +8,6 @@ import { useTranslation } from 'react-i18next';
 import { useState } from 'react';
 import { functions } from '../firebase';
 
-
 const BlogContainer = styled.div`
     {
        
