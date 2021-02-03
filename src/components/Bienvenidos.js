@@ -288,7 +288,7 @@ function Bienvenidos() {
         )
     } else {
         return (
-            <h1></h1>
+            <br></br>
         )
     }
 

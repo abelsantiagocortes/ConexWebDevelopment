@@ -73,7 +73,7 @@ function Blog() {
 
                 <BlogCard
                     title="Cree en ti (Artículo del mes)"
-                    date="23/11/2020"
+                    date="4/2/2021"
                     content={
 
                         'Desde que inicié mi contacto con los ángeles y comencé a trabajar como su canal, comencé a encontrarme con personas que descalificaban mi trabajo. Hace 15 años,cuando inicié, yo me encontraba llena de dudas, de miedos y de incertidumbres; mi vida dio un vuelco cuando se hizo evidente que haría mi misión de vida transmitiendo sus mensajes...'
@@ -86,7 +86,7 @@ function Blog() {
                 <h1>Entradas pasadas...</h1>
                 <BlogCard
                     title="Volver al Centro"
-                    date="25/10/2020"
+                    date="4/2/2021"
                     content={
                         'Las situaciones difíciles hacen parte de la vida de todos. A veces, unas son más complicadas, difíciles y dolorosas que otras, pero indudablemente, son esas, las más fuertes las que nos llevan a las transformaciones más grandes...'
                     }
