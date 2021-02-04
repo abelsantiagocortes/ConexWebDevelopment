@@ -48,10 +48,11 @@ function Footer() {
             </div>
 
             <div className="footer__socialLinks">
-                <a href="https://wa.me/5215529018021?text=Bienvenido%20a%20Conexión%20y%20Consciencia,%20Terapia%20con%20Ángeles,%20en%20que%20puedo%20ayudarte?" className="whatsapp"><WaImg alt="" src='https://i.ibb.co/7g13zC5/whatsapp.png' /></a>
-                <a href="https://www.facebook.com/conexionyconsciencia" className="facebook"><img alt="" src='https://i.ibb.co/MNMxD7M/facebook.png' /></a>
-                <a href="https://www.youtube.com/channel/UCFLEejhLRAtVn7yty5LPFCg" className="youtube"><img alt="" src='https://i.ibb.co/dWTdwMS/Grupo-25.png' /></a>
-                <a href="https://www.instagram.com/myconexion/" className="instagram"><img alt="" src='https://i.ibb.co/1MrLW7G/Grupo-16.png' /></a>
+                <button onClick={() => window.open('https://wa.me/5215529018021?text=Bienvenido%20a%20Conexión%20y%20Consciencia,%20Terapia%20con%20Ángeles,%20en%20que%20puedo%20ayudarte?', "_blank")} className="whatsapp"><WaImg alt="" src='https://i.ibb.co/7g13zC5/whatsapp.png' /></button>
+                <button onClick={() => window.open('https://www.facebook.com/conexionyconsciencia', "_blank")} className="facebook"><img alt="" src='https://i.ibb.co/MNMxD7M/facebook.png' /></button>
+                <button onClick={() => window.open('https://www.youtube.com/channel/UCFLEejhLRAtVn7yty5LPFCg', "_blank")} className="instagram"><img alt="" src='https://i.ibb.co/dWTdwMS/Grupo-25.png' /></button>
+                <button onClick={() => window.open('https://www.instagram.com/myconexion/', "_blank")} className="google"><img alt="" src='https://i.ibb.co/1MrLW7G/Grupo-16.png' /></button>
+
             </div>
 
 

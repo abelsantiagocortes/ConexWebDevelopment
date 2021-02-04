@@ -15,18 +15,25 @@
     box-shadow: 3px 3px #707070;
 }
   
-.social a {
+.social button {
     display: block;
     text-align: center;
     padding: 10px;
     transition: all 0.3s ease;
+    background-color: transparent;
+    outline: none;
+    border: none;
+}
+.social button:focus {
+  border: none ;
+  outline: none ;
 }
   .social img {
     width: 40px;
     border-radius: 20px ;
 
   }
-  .social a:hover {
+  .social button:hover {
     transform: scale(1.1);
 
   }
@@ -35,7 +42,7 @@
       width: 30px;
       border-radius: 20px ;
     }
-    .social a {
+    .social button {
       
       padding: 7px;
       

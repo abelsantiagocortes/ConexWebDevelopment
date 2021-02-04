@@ -15,6 +15,15 @@
     width: 40px ;
     margin: 10px;
 }
+.footer__socialLinks button{
+    outline: none;
+    border: none;
+    background-color: transparent;
+}
+.footer__socialLinks button:focus {
+    border: none ;
+    outline: none ;
+}
 .footer__logoLang > h3{
     color: white;
     font-family: 'Lobster Two', cursive; 
