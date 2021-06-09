@@ -75,7 +75,6 @@ const BienvenidosInfoContainer = styled.div`
 
 }`
 
-
 const BienvenidosTitulo = styled.h1`
 {
     font-family: 'Lobster Two';
@@ -276,7 +275,13 @@ function Bienvenidos() {
                         <Video src="https://www.youtube.com/embed/2iiIaqP2_0g" frameborder="0" allowfullscreen="" ></Video>
                     </VideoFrame>
                 </VideoContainer>
+                <VideoContainer>
+                    <VideoFrame>
+                        <Video src="https://www.youtube.com/embed/2iiIaqP2_0g" frameborder="0" allowfullscreen="" ></Video>
+                    </VideoFrame>
+                </VideoContainer>
                 <BienvenidosInfo3>{t('Bien_Info3_2.1')}</BienvenidosInfo3>
+
                 <ExperienceCard>
 
                 </ExperienceCard>

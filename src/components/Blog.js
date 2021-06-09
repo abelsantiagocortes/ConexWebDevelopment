@@ -70,9 +70,33 @@ function Blog() {
                         <input id="submit" type="submit" value={t('Send.1')}></input>
                     </form>
                 }
-
+                <h1>{t('MonthlyArticles.1')}</h1>
+                
                 <BlogCard
-                    title="Cree en ti (Artículo del mes)"
+                    title="Un día llego un dolor"
+                    date="9/6/2021"
+                    content={
+                        'Un día, sin esperarlo, recibí una visita que la verdad no me agradó mucho. Un dolor se presentó a mi puerta tocando fuerte, muy fuerte, realmente quería que yo escuchara y supiera que estaba ahí. Era tan grande, tan fuerte, tan imposible de ignorar, que me obligó a mirar, me forzó a ver aquello dentro de mí que me rehusé por años a tocar y a reconocer...'
+                    }
+                    author="Yelitza La-Rotta"
+                    link="https://drive.google.com/file/d/1D2uY0nmGr0DSroNQyLaIUVv1KYBuKS13/view?usp=sharing"
+
+                />
+                <BlogCard
+                    title="Nuestra primera misión en la vida: Sanar"
+                    date="9/6/2021"
+                    content={
+                        'Todo mi proceso de autoconocimiento y sanación inició cuando tenía 25 años. En ese momento de mi vida, una situación muy dolorosa, me hizo ver que la única opción posible era estar conmigo, encargarme de mi y responsabilizarme de lo que me estaba sucediendo....'
+                    }
+                    author="Yelitza La-Rotta"
+                    link="https://drive.google.com/file/d/1ghNR4H76-ruJk97hqZFD9RyabdwP8bCl/view?usp=sharing"
+
+                />
+
+                
+                <h1>Entradas pasadas...</h1>
+                <BlogCard
+                    title="Cree en ti"
                     date="8/2/2021"
                     content={
 
@@ -83,7 +107,7 @@ function Blog() {
                     link="https://drive.google.com/file/d/1hyXC8ZwtMAJb801L-gWo5WecP86rYYyd/view?usp=sharing"
 
                 />
-                <h1>Entradas pasadas...</h1>
+
                 <BlogCard
                     title="Volver al Centro"
                     date="8/2/2021"
@@ -94,6 +118,7 @@ function Blog() {
                     link="https://drive.google.com/file/d/18kjbjdhZTfwH3RCkqeHfG-diitdUMBpq/view?usp=sharing"
 
                 />
+                
 
             </div>
         </BlogContainer>
