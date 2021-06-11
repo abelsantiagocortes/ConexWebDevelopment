@@ -268,13 +268,13 @@ function Bienvenidos() {
                         <BotonTerapias  onClick={handleOnClickTer} >{t('Bien_Terapias.1')}</BotonTerapias>
                     </BienvenidosBotones>
                 </BienvenidosInfoContainer>
-
-                <BienvenidosInfo3>{t('Bien_Info3.1')}</BienvenidosInfo3>
+                <BienvenidosInfo3>{t('Bien_Info3_3.1')}</BienvenidosInfo3>
                 <VideoContainer>
                     <VideoFrame>
-                        <Video src="https://www.youtube.com/embed/2iiIaqP2_0g" frameborder="0" allowfullscreen="" ></Video>
+                        <Video src="https://www.youtube.com/embed/BlAMG9Gm0sg?start=1" frameborder="0" allowfullscreen="" ></Video>
                     </VideoFrame>
                 </VideoContainer>
+                <BienvenidosInfo3>{t('Bien_Info3.1')}</BienvenidosInfo3>
                 <VideoContainer>
                     <VideoFrame>
                         <Video src="https://www.youtube.com/embed/2iiIaqP2_0g" frameborder="0" allowfullscreen="" ></Video>
